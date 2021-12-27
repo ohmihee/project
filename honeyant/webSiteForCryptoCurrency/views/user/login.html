@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href="/user/user.css">
+</head>
+<body>
+    
+
+
+<div class="login_wrapper">
+    <div class="login_box">
+        <h1 class="box_title">로그인</h1>
+        <p class="box_subtitle">소중한 정보를 위해 주소창을 체크해주세요.</p>
+        <div class="chk_add">
+        
+            <form action = "/user/loginCheck" method="post">
+            <input type="text" id = "login_email" name= "email" placeholder="E-Mail"></br>
+            <input type="password" id = "login_password" name = "password" placeholder="Password"></br>
+            <input type ="submit" class="loginbtn submit_login" value = "로그인" disabled>
+            </form>
+                <a class = "login_basic mt20" href="/user/findpw">비밀번호 찾기</a>
+                <a class = "red mt20 ftbold" href="/user/signup/agree">회원가입</a>            
+        </div>
+    </div>
+</div>
+{% if flag =='0' %}
+<script type = "text/javascript">
+
+alert('아이디,비밀번호를 다시 확인해주세요');
+</script>
+{% endif %}
+<script type = "text/javascript" src="/user/login.js"></script>
+
+</body>
+</html>

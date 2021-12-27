@@ -1,0 +1,14 @@
+*/node_modules**
+./front/.next**
+*/package-lock.json
+./front/package-lock.json
+back/db_config.json
+*/.env
+.env**
+./front/AzitGallery.pem
+./back/AzitGallery.pem
+*/AzitGallery.pem
+AzitGallery.pem**
+node_modules
+*.pem
+*jopapply.pem

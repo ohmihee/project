@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    width: 100%;
+}
+#chatRoom{
+    width: 100%;
+    height: 450px;
+    overflow: scroll;
+    /* background-color: rgba(114, 112, 109, 0.822); */
+}
+#msg{
+    width: 75%;
+    height: 30px;
+}
+#chatBtn{
+    width: 20%;
+    height: 30px;
+    background-color: #dedede;
+    border: 1px solid #666;
+}
+.connect{
+    display: block;
+    text-align: center;
+}
+.disconnect{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(250, 89, 89);
+}
+.me{
+    margin-left: 10px;
+    max-width: 240px;
+    float: right;
+    /* background-color: rgb(245, 224, 107); */
+    border-radius: 5px;
+    border: 1px solid #fcbe32;
+}
+
+.meday{
+    float: right;
+}
+.you{
+    margin-right: 10px;
+    max-width: 240px;
+    float: left;
+    /* background-color: rgb(99, 174, 224); */
+    border-radius: 5px;
+    border: 1px solid #004e66;
+}
+.day{
+    background-color: #ececec;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+#chatRoom > div{
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* #chatRoom > div > span{
+    display: block;
+    padding: 7px 14px;
+    border-radius: 15px;
+}
+#chatRoom > div{
+    height: 30px;
+    padding: 5px;
+}
+#chatRoom > div > span.my{
+    float: right;
+    overflow: hidden;
+    background: yellow;
+}
+#chatRoom > div > span.you{
+    float: left;
+    overflow: hidden;
+    background: rgb(228, 228, 228);
+} */

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="wrap">
+    <div class="white_space">
+    </div>
+    <div class="container_for_main">
+        <div id="wrap_for_module">
+            <img src="https://www.aesop.com/u1nb1km7t5q7/4RgI5fFZLfvlW55NXyb0cx/f323f50f691cfe3a510e9121239e2786/Aesop_Raeburn_Web_Homepage_Primary_Full_Bleed_KR_TH_Desktop_2880x1044px.jpg" >
+        <div class="deliver_banner">
+            <div class="in_banner">
+                <div class="wrap_banner">
+                    <button>
+                        <p onclick="visible()">
+                        전 제품 무료 표준 배송 혜택을 즐겨보세요
+                        <svg width="22" height="22">
+                            <line x1="0" y1="5" x2="10" y2="5" style="stroke:white; stroke-width:1"/>                       <!--svg---------------------->
+                             <line x1="5" y1="0" x2="5" y2="10" style="stroke:white; stroke-width:1"/>
+                        </svg> 
+                        </p>
+                    </button>
+                    <P></P>
+                </div>    
+            </div>
+        </div>
+        <div class="contents_for_main">
+            <ul class="menu"> 
+                <li>
+                    <ul>
+                        <li><a class="product" href="#">제품보기</a><P  onclick="lookProduct()"></P></li>
+                        <li><a href="#">읽기</a><p></p></li>
+                        <li><a href="#">스토어</a><P></p></li>
+                        <li><a href="#">검색</a><P></P></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li onclick="loginForm()"><a href="#">로그인</a></li>
+                        <li onclick="cartShow()"><a href="#">카트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="logo">
+                <p>logo</p>
+            </div>
+            <div class="main_center">
+                <ul>
+                    <li>
+                        <h2>이솝과 래번</h2>
+                        <h1>이동 중 관리를 위한 편리한 휴대</h1>
+                    </li>
+                    <li>
+                        <p>책임을 다하는 패션 브랜드 래번과의 첫 콜라보레이션으로 탄생한 어드벤처러 롤 업은 핸드와 스킨 케어를 위한 필수품을 컴팩트하게 휴대할 수 있도록 해, 오늘날 미지의 영역을 순조롭게 헤쳐나가도록 합니다. </p>
+                        <div class="view">
+                            <a href="#">지금보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_for_detail">
+        <span class="deliver">
+            <svg width="22" height="22">
+                <line x1="0" y1="0" x2="10" y2="10" style="stroke:black; stroke: width 6px;"/>                       <!--svg---------------------->
+                <line x1="0" y1="10" x2="10" y2="0" style="stroke:black; stroke: width 6px;"/>
+            </svg> 
+            <div class="deliver_detail">
+                <h2>
+                    전 구매 무료 배송
+                </h2>
+                <div class="deliver_model">
+                    <ul>
+                        <li>
+                            <p>우체국 택베</p>
+                        </li>
+                        <li>
+                            <p>
+                                전제품                                
+                            </p>
+                            <p>
+                                무료배송
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                전지역 
+                            </p>
+                            <p>
+                                영업일 기준, 2,3일 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </span>
+        <div class="hidden_shipping_window">
+            <p>카트가 비어있습니다.</p>
+        </div>
+        <div class="login_form">
+            <div class="login_pop">
+                <form action="/action_page.php" class="login_popUp">
+                    <h2>안녕하세요.</h2>
+                    <h3>유효한 이메일 주소를 입력하세요</h3>
+                    <label for="email">이메일 주소</label>
+                    <input type="email" name="email" placeholder required>
+                    <input type="button">
+                    <span>계속</span>
+                </form>
+            </div>
+        </div>
+        <div class="look_product">
+            <ul>
+                <li>
+                    <svg width="24" height="24">
+                        <line class="x" x1="0" y1="0" x2="10" y2="10" style="stroke:black; stroke: width 8px;"/>                       <!--svg---------------------->
+                        <line class="xx" x1="0" y1="10" x2="10" y2="0" style="stroke:black; stroke: width 8px;"/>
+                    </svg> 
+                </li>
+                <li>
+                    <ul>
+                        <div class="product_category">
+                            <li onmouseover="skin()" >
+                                스킨
+                            </li>
+                            <li>헤어</li>
+                            <li>바디&핸드</li>
+                            <li>향수</li>
+                            <li>홈</li>
+                            <li>키트</li>
+                            <li>키프트 가이드</li>
+                        </div>
+                        <li class="detail_off"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="detail_item">
+            <ul>
+                <li>
+                    <svg width="24" height="24">
+                        <line x1="0" y1="0" x2="10" y2="10" style="stroke:black; stroke: width 8px;"/>                       <!--svg---------------------->
+                        <line x1="0" y1="10" x2="10" y2="0" style="stroke:black; stroke: width 8px;"/>
+                    </svg> 
+                </li>
+                <div class="skin_detail">
+                    <li onmouseover="seeAll()">모두 보기
+                        <div class="aaaa"></div>
+                    </li>
+                    <li class="skincare_detail">스킨케어기프트
+                        <div class="aaaa">
+                            <ul>
+                                <li>
+                                    <span>스킨케어 기프트 모두보기</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <P>페뷸러스 페이스 클렌저</P>
+                                        <P>대부분 피부 타입에 이상적</P>
+                                        <P>2사이즈/ 33,000원부터</P>
+                                        <p><img src="https://www.aesop.com/medias/Aesop-Skin-Fabulous-Face-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTY4NTZ8aW1hZ2UvcG5nfGltYWdlcy9oNmMvaDU0Lzg3OTc3NzQzNDgzMTgucG5nfDUxYjFmZTJiNGRmODFmY2Q3NDIxNDJjMjUxN2NmYjhkMDFmOWYxMzEwNWNkZjRiNDIyMWRiY2ExNzc1MGE0MmM" width="49.08px" height="49.98px"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <P>파슬리 씨드 안티 옥시던트 세럼</P>
+                                        <P>항산화 효과가 뛰어난 추출물의 복합적 브랜드</P>
+                                        <P>100mm/ 85,000원부터</P>
+                                        <p><img src="https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Serum-100mL-small.png?context=bWFzdGVyfGltYWdlc3w5ODY4M3xpbWFnZS9wbmd8aW1hZ2VzL2hiMi9oNmYvODc5NzQ0NjExMTI2Mi5wbmd8YWE2NzA4ODVmYjMxMDZiMWEzZGU2NDFlNzRjZDgyYTFmOTUxNzY1NTM5YWE3MzM4MjQ3ZjIzZTNkZGJjZDY5MA" width="49.08px" height="49.98px"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <P>로즈힙 씨드 립 크림</P>
+                                        <P>비타밀을 풍부하게 함유한 립 하이드레이터</P>
+                                        <P>6mm/19,000원</P>
+                                        <p><img src="https://www.aesop.com/medias/Aesop-Skin-Rosehip-Seed-Lip-Cream-6mL-small.png?context=bWFzdGVyfGltYWdlc3wzODU0MHxpbWFnZS9wbmd8aW1hZ2VzL2g4YS9oMDkvODgwNTA3MzE5MDk0Mi5wbmd8N2ViNThmYjViOGJkMDc1OWJjZjU0ODY2N2NjMWY5ZmI3OWFlYmE0Mzk4ZDhkZWUwMmM4MTNiZDg1OTliY2E5ZA" width="49.08px" height="49.98px"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <P>비엔티 밸런싱 토너</P>
+                                        <P>특히 민감성 피부에 이상적</P>
+                                        <P>2사이즈/ 39,000원부터</P>
+                                        <P><img src="https://www.aesop.com/medias/Aesop-Skin-B-Tea-Balancing-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTk2MzZ8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaDM2Lzg4MDc0MTc4Mzk2NDYucG5nfGU1ODAxYzNjMzI3MzY4ZTVlOGI0YjBmNmY2NzNkY2VlOWFkMzlmNGE0ZWJkYjFiMzgzNjlhMWVmNGYxODgyODA" width="49.08px" height="49.98px"></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>클렌저
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>각질제거
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>트리트먼트&마스크
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                       
+                    <li>토너
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>하이드레이터
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>립&아이
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>쉐이빙
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                        
+                    <li>선 케어/SPF
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                       
+                    <li>키트
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>                       
+                    <li>스킨케어 세트 추천
+                        <div class="aaaa">fkjsafdklj;s</div>
+                    </li>   
+                        
+                </div>                
+            </ul>
+        </div>
+        <div class="see_all">
+            <img src="https://www.aesop.com/medias/Aesop-Shop-Navigation-SkinCare-960x1600px.jpg?context=bWFzdGVyfGltYWdlc3wyOTMwMzF8aW1hZ2UvanBlZ3xpbWFnZXMvaGEyL2g2ZS84ODA5OTU3NTg5MDIyLmpwZ3xkY2U4Y2Y0NDRlNTc3YzYwMzJjYjBlMjVjNDM3Njg4MTI2ZDZhYWE4MjM2YTJhZTViNmZhMGVjNTNhNzZhOTgw">
+        </div>
+        <div class="detail_of_detail">
+            <ul class="skin_detail_of_detail">
+                <div>
+                </div>                                 
+            </ul>
+        </div>
+     </div>   
+    <div class="container_popular_menu">
+        <ul class="main_slide">
+            <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/5CgmELAfBL07dzWF2dXTlj/5d3419505c7eea0c19a49cca1a71260e/Aesop-Hand-Resurrection-Aromatique-Hand-Wash-Screw-Cap-500mL-Large-888x1100px.png"></a></li>
+            <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/4oiBZSglPdvTkoGdSoZ2tq/b3c78e9a9a457ae4e350f24b49747a0d/Aesop-Body-Resurrection-Aromatique-Hand-Balm-75mL-large.png"></a></li>
+            <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/6B9yppH9QbUJYdzstqgZo9/bd7e5ef5713c0e003307af40cf980dd0/Aesop-Hand-Reverence-Aromatique-Hand-Wash-500mL-large.png"></a></li>
+            <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/44Qi2K24OtODUGomQi0RsY/d57d61a79c5b92345c899e487de5369d/Large-PNG-Aesop-Hand-Reverence-Aromatique-Hand-Balm-75mL-large.png"></a></li>
+            <li><a href="#"><img  class="direction_slide" alt="" src="https://www.aesop.com/u1nb1km7t5q7/4HSK3XP7EifCH3zX1dpEz8/a702430fe70a11d5941c57bb3e4b0dfd/Aesop-Reverence-Duet-with-Product-Large-1584x962px.png"></a></li>
+        </ul>
+        <div class="information_for_menu">
+            <ul >
+                <li>
+                    <a href="#">
+                        <h5>
+                            레저렉션 아로마틱 핸드위시
+                        </h5>
+                        <P>
+                            열심히 일한 손을 위한 부드러운 클렌징
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            레저렉션 아로마틱 핸드 밤
+                        </h5>
+                        <P>
+                            시트러스, 우디, 허브향
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            레버런스 아로마틱 핸드위시
+                        </h5>
+                        <P>
+                            손의 각질을 부드럽게 관리하는 핸드워시
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            레번런스 아로마틱 핸드 밤
+                        </h5>
+                        <P>
+                            우디, 흙내음, 스모키향
+                        </P>
+                    </a>
+                </li>
+                <li class="infor_direction">
+                    <a href="#">
+                        <h5>
+                            레버런스 듀엣
+                        </h5>
+                        <P>
+                            호화로운 핸드 케어 듀엣
+                        </P>
+                    </a>
+                </li>           
+            </ul>
+        </div>
+        <div class="main_button">
+            <ul>
+                <li class="left" onclick="leftSlide()" ><input type="button" ></li>
+                <li class="right"  onclick="rightSlide()"><input type="button"></li>
+            </ul>
+        </div>
+        <div class="wrap_line">
+            <div class="line_direction"></div>
+            
+        </div>
+    </div>
+    <div class="container_two_top">
+        <div class="left_top">
+            <div class="information_for_left_top">
+                <h2>
+                    테임 헤어 세럼
+                </h2>
+                <h4>
+                    페티그레인, 베르가뭇 라인드, 파촐리
+                </h4>
+                <p>
+                    스킨이 아닌 모발을 가꾸는 세럼
+                </p>
+                <div onclick="tameBtn()">테임보기</div>
+                <input type="button">
+            </div>
+            <div class="left_top_detail">
+                <span><img src="https://www.aesop.com/u1nb1km7t5q7/3zSJSW3wuUS2zhAS8THEtc/8285d7564959e6c7712848aa752f4876/Aesop-Hair-Tame-Hair-Serum-60mL-Hybris-Large-684x668px.png"></span>
+                <span>
+                    <ul>
+                        <li>테임 헤어 세럼</li>
+                        <li>스킨이 아닌 모발을 가꾸는 세럼</li>
+                        <li>테임 헤어 세럼은 가벼운 제형의 유분감 없는 스킨 세럼에서 영감을 받았습니다. 날리고 부시시한 모발은 매끄럽게 정돈하여 두껍거나 얇은 모발에 상관없이 건강하고 섬세한 연출이 가능합니다.</li>
+                        <li>
+                            <span>
+                                <input type="button">
+                                <span>카트에 추가하기 - 37,000</span>
+                            </span>
+                            <span>테임보기</span>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div class="right_top">
+            <div class="information_for_right_top">
+                <h2>
+                    스컬프 헤어 폴리시
+                </h2>
+                <h4>
+                    라임, 베르가뭇, 라인드, 클로브 버드
+                </h4>
+                <p>
+                    뻣뻣함과 유연함 사이의 균형을 맞춘 헤어 젤
+                </p>
+                <div onclick="sculptBtn()">스컬프보기</div>
+                <input type="button">
+            </div>
+            <div class="right_top_detail">
+                <span><img src="https://www.aesop.com/u1nb1km7t5q7/5I8fKLukfbchaBe7nQ0kqC/b8f354ceec674c618f8f4d09d40ed46c/Aesop-Hair-Sculpt-Hair-Polish-100mL-Hybris-Large-843x1000px.png"></span>
+                <span>
+                    <ul>
+                        <li>스컬프 헤어 폴리스</li>
+                        <li>뻣뻣함과 유연함 사이의 균형을 맞춘 헤어 젤</li>
+                        <li>스컬프 헤어 폴리시는 고정력이 뛰어난 헤어 젤입니다. 단단하면서 유연하게 정돈된 헤어 스타일을 완성하며 짧은 길이나 긴 모발, 세심한 스타일링이나 자연스럽게 연출한 헤어 모두에 적합합니다. </li>
+                        <li>
+                            <span>
+                                <input type="button">
+                                <span>카트에 추가하기 - 36,000</span>
+                            </span>
+                            <span>스컬프 보기</span>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+     </div>   <!--           -------------------------------------------------------->
+    <div class="container_second_menu">
+        <div class="wrap_for_module_for_second">
+            <ul class="sub_slide">
+                <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/3qcKQ0PkT1ALrfgy3DPmhW/0f39c38a9442f10f09eaa8f004045778/Aesop-Hair-Shine-25mL-Large-684x668px.png"></a></li>
+                <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/2TTf4sawdMOuQfpyPYi56V/44f3bda9003e50dd81e192060007f492/Aesop_Hair_Rose_Hair___Scalp_Moisturising_Masque_120mL_large.png"></a></li>
+                <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/6mGQhEsNfnvcBD84Lm6Lwy/a8f03b91303e5e3a881ce228b116b78c/Aesop_Hair_Violet_Leaf_Hair_Balm_60mL_large.png"></a></li>
+                <li><a href="#"><img alt="" src="https://www.aesop.com/u1nb1km7t5q7/5qhyVKc9ih4mT1mN9YeJ7L/9cd9b8d43b6e6d3f83847d4aecb3e4cf/Aesop-Hair-Classic-Shampoo-500mL-large.png"></a></li>
+                <li><a href="#"><img class="direction_slide2" alt="" src="https://www.aesop.com/u1nb1km7t5q7/75EPSgwboNoyvde34GMseV/eba60fe79f72aadee80595701e9d8d5a/Aesop-Hair-Classic-Conditioner-500mL-large.png"></a></li>
+            </ul>
+            <ul class="sub_information_for_menu">
+                <li>
+                    <a href="#">
+                        <h5>
+                            샤인
+                        </h5>
+                        <P>
+                            유분기를 남기지 않고 광택을 선사합니다.
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            로즈 헤어 앤 스칼프 모이스처라이징 마스크
+                        </h5>
+                        <P>
+                            모발과 두피를 건강하게 관리합니다.
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            바이올렛 리프 헤어밤
+                        </h5>
+                        <P>
+                            스타일링을 도와주는 크리미한 컨디셔닝 밤
+                        </P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>
+                            클래식 샴푸
+                        </h5>
+                        <P>
+                            순하지만 효과적으로 세정하는 샴푸
+                        </P>
+                    </a>
+                </li>
+                <li class="infor_direction2">
+                    <a href="#">
+                        <h5>
+                            클래식 컨디셔너
+                        </h5>
+                        <P>
+                            영양을 공급해주는 가벼운 컨디셔너
+                        </P>
+                    </a>
+                </li>           
+            </ul>
+            <div class="sub_button">
+                <ul>
+                    <li onclick="leftSlide2()" class="left2"></li>
+                    <li onclick="rightSlide2()"  class="right2"></li>
+                </ul>
+            </div>
+            <div class="wrap_line2">
+                <div class="line_direction2"></div>
+                
+            </div>
+         </div>   
+    </div>
+    <!-- start container -->
+    <div class="container_for_store">
+        <aside>
+            <article>
+                <h2>
+                    스토어 로케이터
+                </h2>
+                <P>
+                    매장에서는 이솝 컨설턴트가 고객 여러분을 따뜻하게 맞이하고 기프트 구매를위한 맞춤형 컨설팅을 제공해드립니다.
+                </P>
+                <div class="near_store">
+                    <a  href="#">가까운 스토어 찾기</a>
+                </div>
+            </article>
+        </aside>
+        <div class="wrap_for_photo_store">
+            <div class="photo_store_sam" >
+                <img src="https://www.aesop.com/u1nb1km7t5q7/1Ej0vXgx5eD9wZ15S03LO4/3c8083d6f26f08d595a672150989eb98/Aesop-KR-Samcheong-Hero-Desktop-2880x1620.jpg">           
+                <div class="wrap_for_line">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="store_name">이솝 삼청</div>
+            </div>
+            <div class="photo_store_sam" >
+                <img src="https://www.aesop.com/u1nb1km7t5q7/78lSsJHoVvtMYVyynstu3e/cc94bae54e56d636857ab94f2017b0be/Aesop-KR-Lotte-World-Tower-Mall-Hero-Bleed-Desktop-2880x1620px.jpg">           
+                <div class="wrap_for_line">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="store_name">이솝 롯데월드몰</div>
+            </div>
+            <div class="sub_button">
+                <ul>
+                    <li onclick="photoleft()" class=""></li>
+                    <li onclick="photoright()"  class=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+    <div class="container_for_quote">
+        <div class="wrap_for_quote">
+            <blockquote>‘It is high time to rekindle the stars.’</blockquote>
+            <cite>Guillaume Apollinaire</cite>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_wrap">
+          <ul>
+             <li>
+                 <section>
+                     <P></P>
+                     <p><span>이메일 주소</span></p>
+                     <P>이솝 제품, 서비스, 스토어, 행사, 문화적 관심사 등 다양한 소식을 받아볼 수 있도록 구독하세요.</P>
+                     <P>본인의 만 14세 이상 여부를 확인해주세요.</P>
+                 </section>
+                 <section>
+                    <h3>주문 및 지원</h3>
+                    <p class="footer_line"></p>
+                    <p>문의하기</p>
+                    <p>자주 묻는 질문</p>
+                    <p>배송 및 반품</p>
+                    <p>이용 약관</p>
+                 </section>
+                 <section>
+                    <h3>서비스</h3>
+                    <p class="footer_line"></p>
+                    <p>라이브 지원</p>
+                    <p>간결함과 진정성</p>
+                 </section>
+                 <section>
+                    <h3>위치 기본 설정</h3>
+                    <p class="footer_line"></p>
+                    <p>배송:대한민국</p>
+                    <p>언어:korean</p>
+                 </section>
+              </li>
+              <li>
+                 <section>
+                    <h3>지속가능성</h3>
+                    <P></P>
+                    <P>이솝은 비콥 인증을 획득한 브랜드이며, 이솝의 전 제품은 비건 플렌들리 제품입니다.</P>
+                 </section>
+                 <section>
+                    <h3>소개</h3>
+                    <p class="footer_line"></p>
+                    <p>브랜드 스토리</p>
+                    <p>Foundation</p>
+                    <p>채용</p>
+                    <p>이솝 온라인 개인정보 취급 방침</p>
+                 </section>
+                 <section>
+                    <h3>소셜</h3>
+                    <p class="footer_line"></p>
+                    <p>Instagram</p>
+                    <p>Twiter</p>
+                    <p>Linkedln</p>
+                    <p>Kakao Plus Friend</p>
+                 </section>
+                 <section>
+                    <h3>주의</h3>
+                    <p class="footer_line"></p>
+                    <p>상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 선릉로 162길 3 이솝코리아 3층 | 대표자: 마이클안토니오키프 | 대표전화: 1800-1987 | 공식 온라인몰 주문 문의 070-7003-1351 | 대표 이메일:<br> aesop@aesop.com | 호스팅 사업자: SAP Hybris | 사업자 등록 번호: 220-88-56014 | 통신판매업 신고번호: 2014-서울강남-02300</p>
+                 </section>
+              </li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+
+        </div>
+    </div>
+
+
+
+
+</div> 
+    
+<script type="text/javascript">
+// 클릭하면 팝업창이 뜨도록 하는 함수----------------------------------------------------------
+//960
+let btn = document.querySelector(".deliver");
+function visible(){
+    let logo = document.querySelector('.logo');
+    if(btn.className=="deliver"){
+        btn.className ="deliver show";
+        disableScroll();
+        document.addEventListener('click',deliveroff)
+        }else if(btn.className=="deliver show"){
+        btn.className="deliver hide";
+        enableScroll();
+    }else{
+        btn.className="deliver show";
+        
+    }
+}
+function deliveroff(e){
+    if(e.clientX>960){
+        btn.className="deliver hide";
+        enableScroll();
+    }
+}
+// 클릭하면 맨 위에 검은 줄이 내려왔다 다시 올라가는 함수---------------------------
+function cartShow(){
+    let cartBtn = document.querySelector(".hidden_shipping_window");
+    if(cartBtn.className=="hidden_shipping_window"){
+        cartBtn.className="hidden_shipping_window cartShow";
+    }else{
+        cartBtn.className="hidden_shipping_window";
+    }
+}
+// 클릭하면 로그인 참------------------------------------------------------
+function loginForm(){
+    let loginBtn = document.querySelector('.login_form');
+    let wSpace = document.querySelector('.white_space');
+    if(loginBtn.className=="login_form"){
+        loginBtn.className="login_form login_on";
+        disableScroll();
+        console.log(loginBtn);
+     
+    }else if(loginBtn.className=="login_form login_on"){
+        loginBtn.className="login_form login_out";
+        enableScroll();
+        console.log(loginBtn);
+      
+    }else{
+        loginBtn.className="login_form login_on";
+        disableScroll();
+        }
+    return loginBtn;
+        
+}
+
+
+// 스크롤을 내리면 메뉴가 안 보이고 스크롤을 올릴 때는 메뉴가 보이는 함수-----------------
+// 추가적으로 맨 위에 검은 줄이 있을 때는 그 정도를 띄우고 메뉴가 보이게끔 하는 함수------------------------
+console.log(window.scrollY);
+console.log(screen.availWidth);
+let lastScrollTop = 0;
+let navbar = document.querySelector('.menu');
+window.addEventListener('scroll',function(){
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop>lastScrollTop){
+        navbar.style.top = "-80px";
+    }else{
+        navbar.style.top ="-30px";
+        navbar.style.background="#fffef2";
+        if(window.scrollY<10){
+            navbar.style.top="20px";
+            navbar.style.background="local";
+        }
+    }
+    lastScrollTop = scrollTop;
+})
+let product = document.querySelector('.look_product');
+
+function lookProduct(){
+    let menuappear = document.querySelector('.menu');
+    if(product.className=="look_product"||product.className=="look_product invisible"){
+        product.className="look_product visible";
+        menuappear.style.top ="-8px";
+        menuappear.style.position="absolute";
+        disableScroll();
+        document.addEventListener('click',productOut);
+    }else{
+        product.className="look_product invisible";
+        menuappear.style.top ="15px";
+        menuappear.style.position="fixed";
+        enableScroll();
+    }
+    
+}
+// 제품보기 누르고 세부적으로 스킨 누르면 다시 세부팝업 나왔다가 다기 제품보기에 mouseover되면 세부창이 다시 사라지는 함수-----
+// javascript sample[ingoo]
+let skinonmouse=document.querySelector('.detail_item');
+ function skin(){
+     let product=document.querySelector('.product');
+     skinonmouse.className="detail_item detail_item_block";
+     document.addEventListener('click',detailOut);
+     disableScroll();
+     product.addEventListener('mouseover',function(){
+         skinonmouse.className="detail_item";
+         skinDetailoff();
+         allSee.className="see_all";
+        });
+     }
+function disableScroll() {
+document.body.style.overflow = 'hidden';
+document.querySelector('body').scrollTop = window.scrollY;
+}
+
+function enableScroll() {
+document.body.style.overflow = null;
+}
+    // 스킨 세부창 나오고 다시 가장 왼쪽 공간에 마우스가 놓이면 스킨 세부창이 사라지는
+let offSpace=document.querySelector('.detail_off');  
+skinDetailox();
+function skinDetailox(){
+    let skinDetailonmouse = document.querySelector('.skincare_detail');  
+    let offSpace=document.querySelector('.detail_off');  
+    skinDetailonmouse.addEventListener('mouseenter',skinDetailon);
+    console.log(offSpace);
+    offSpace.addEventListener('mouseover',skinDetailoff);
+    
+}
+
+function skinDetailon(){
+    let aa = document.querySelector('.skin_detail_of_detail');
+      
+    aa.className="skin_detail_of_detail all_block";
+}
+function skinDetailoff(){
+    let bb = document.querySelector('.skin_detail_of_detail');
+    bb.className="skin_detail_of_detail";
+}
+function rightSlide(){
+    let mainMoveR =  document.querySelector('.main_slide');
+    mainMoveR.className="main_slide main_slide_on";
+    let rightMove = document.querySelector('.direction_slide');
+    rightMove.className ="direction_slide right_slide_on";
+    let inforMove = document.querySelector('.information_for_menu');
+    console.log(inforMove);
+    inforMove.className = "information_for_menu information_for_menu_on";
+    console.log(inforMove.className);
+    informoveR = document.querySelector('.infor_direction');
+    informoveR.className="infor_direction infor_direction_on";
+    let lineMoveR = document.querySelector('.line_direction');
+    lineMoveR.className="line_direction line_right";
+    let leftBtn = document.querySelector('.left');
+    leftBtn.style.display="block";
+    let rightBtn = document.querySelector('.right');
+    rightBtn.style.display="none";
+}
+
+function leftSlide(){
+    let mainmoveL = document.querySelector('.main_slide');
+    mainmoveL.className = "main_slide main_slide_on2";
+    let leftMove = document.querySelector('.direction_slide');
+    leftMove.className="direction_slide left_slide_on";
+    let informove = document.querySelector('.information_for_menu');
+    informove.className = "information_for_menu main_slide_on2";
+    let inforDirection = document.querySelector('.infor_direction');
+    
+    let lineMoveL = document.querySelector('.line_direction');
+    lineMoveL.className="line_direction line_right line_left";
+    let leftBtn = document.querySelector('.left');
+    leftBtn.style.display="none";
+    let rightBtn = document.querySelector('.right');
+    rightBtn.style.display="block";
+}
+let subinforMove = document.querySelector('.sub_information_for_menu');
+let subLineMoveR = document.querySelector('.line_direction2');
+let leftBtn2 = document.querySelector('.left2');
+let rightBtn2 = document.querySelector('.right2');
+let rightMove2 = document.querySelector('.direction_slide2');
+let subMoveR = document.querySelector('.sub_slide');
+
+function rightSlide2(){
+    subMoveR.className="sub_slide sub_slide_on";
+    subinforMove.className="sub_information_for_menu sub_information_for_menu_on";
+    subLineMoveR.className = "line_direction2 line_right";
+    leftBtn2.style.display="block";
+    rightBtn2.style.display="none";
+    rightMove2.className="direction_slide2 right_slide_on2";
+    informoveR = document.querySelector('.infor_direction2');
+    informoveR.className="infor_direction2 infor_direction_on2";
+}
+
+function leftSlide2(){
+    subMoveR.className="sub_slide sub_slide_left_on";
+    console.log(subMoveR.className);
+    subinforMove.className="sub_information_for_menu sub_information_for_menu_on2";
+    subLineMoveR.className = "line_direction2 line_left";
+    leftBtn2.style.display="none";
+    rightBtn2.style.display="block";
+    rightMove2.className="direction_slide2 left_slide_on2";
+    informoveR = document.querySelector('.infor_direction2');
+    informoveR.className="infor_direction2 infor_left_on2";
+}
+
+function productOut(e){
+    let product1 = document.querySelector('.look_product');
+    let menuappear1 = document.querySelector('.menu');
+    let skinonmouse1=document.querySelector('.detail_item');
+    if(e.clientX>640 && skinonmouse1.className=="detail_item" ){
+    product1.className="look_product";
+    menuappear1.style.top ="15px";
+    menuappear1.style.position="fixed";
+    enableScroll();
+    }
+}
+
+// functino detailOut(e){
+//     let
+// }
+// document.addEventListener('mouseover',dd);
+// function dd(e){
+//     let a = e.clientX;
+//     let b = e.clientY;
+//     console.log(a,b);
+// }
+function detailOut(e){
+    let product2 = document.querySelector('.look_product')
+    let menuappear2 = document.querySelector('.menu');
+    let skinonmouse2=document.querySelector('.detail_item');
+    let aa1 = document.querySelector('.skin_detail_of_detail');
+    if(e.clientX>1279 && skinonmouse2.className=="detail_item detail_item_block" && aa1.className=="skin_detail_of_detail"){
+    product2.className="look_product";
+    menuappear2.style.top ="15px";
+    menuappear2.style.position="fixed";
+    skinonmouse2.className="detail_item";
+    }
+}
+
+// https://www.kirupa.com/html5/get_element_position_using_javascript.htm
+
+
+// 테임보기랑 스컬프 보기 누르면 제품 정보가 나오고 다시 영역 벗어난 곳을 클릭하면 제품 정보가 다시 사라지는 함수
+let tameDetail = document.querySelector('.left_top_detail');
+let sculptDetail = document.querySelector('.right_top_detail');
+function tameBtn(){
+    tameDetail.style.display="block";
+    document.addEventListener('click',tamescreenout);
+}
+function tamescreenout(e){
+    if(e.clientX>1614 && tameDetail.style.display=="block"){
+        tameDetail.style.display="none";
+    }
+}
+function sculptBtn(){
+    sculptDetail.style.display="block";
+    document.addEventListener('click',sculptscreenout);
+}
+function sculptscreenout(e){
+    if(e.clientX<289 && sculptDetail.style.display=="block"){
+        sculptDetail.style.display="none";
+    }
+}
+function con(e){
+    document.addEventListener('click',function (e){
+        ss = e.clientX;
+        aa = e.clientY;
+        console.log(ss, aa);
+    })
+}
+con();
+// x는 600 y는 455
+function windowfix(e){
+    if(e.clientX>590 && e.clientX<608 && e.clientY>25 && e.clientY<45&&product.className=="look_product visible"){
+        product.className="look_product invisible";
+        skinonmouse.className="detail_item";
+        let lastDetail = document.querySelector('.skin_detail_of_detail');
+        lastDetail.className="skin_detail_of_detail";
+        enableScroll();
+        console.log(e.clientY,e.clientY);
+        allSee.className="see_all";
+    }
+}
+windowfix;
+document.addEventListener('click',windowfix);
+// let lines = document.querySelectorAll('.menu>li>ul>li>p');
+// lines.forEach(lineSlide)
+
+
+// function lineSlide(e){
+//     e.addEventListener('')
+//     e.className="line_an";
+//     console.log(e.className)
+// }
+///////여기서부터 // ------------------------------------------------------------
+function skinDetailcategory(){
+    btns = document.querySelectorAll('.skin_detail>li');
+    btns.forEach((skinDetailcategory, index)=>{
+        skinDetailcategory.addEventListener('mouseover',function(){
+            let b= skinDetailcategory.children;
+            console.log(b[0].className);
+            if(b[0].className=="aaaa"||b[0].className=="aaaa none"){
+            let c =b[0].className="aaaa block";
+            skinDetailcategory.addEventListener('mouseleave',function(){
+                b.addEventListener('mouseover',function(){
+                    b[0].className="aaaa block";
+                })
+                console.log(skinDetailcategory);
+                b[0].className="aaaa";
+
+            })
+            }else if(b[0].className=="aaaa block"){
+                b[0].className="aaaa block";
+                skinDetailcategory.addEventListener('mouseleave',function(){
+                    // skinDetailcategoryKeep();
+                    b[0].className="aaaa none";
+                    console.log("elseif");
+                   
+                })
+               
+            }    
+
+        })
+    })
+}
+skinDetailcategory();
+let allSee = document.querySelector('.see_all');
+function seeAll(){
+    allSee.className="see_all allblock";
+    offSpace.addEventListener('mouseover',function(){
+        if(allSee.className=="see_all allblock"){
+            allSee.className="see_all allnone";
+        }    
+    })
+}
+//    function skinDetailcategoryKeep(e){
+//        if(e.clientX>920&&e.clientX<1278){
+//            b[0].className="aaaa block";
+//        }
+//    }
+
+</script>
+</body>
+</html>

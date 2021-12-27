@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div id="wrap">
+            <div id="wrap2">
+                <div id="logo">
+                    <img src="https://woozoo.kr/assets/logos/woozoo-logo-t-dca8059c47266234d89e94cef2ccafc2b81ac88c921ab8712701f7edace14371.png">
+                </div>   
+                <div id="menu">
+                    <div id ="sub-menu">
+                        <ul>
+                            <li><a href="#">방 찾기</a></li>
+                            <li><a href="#">셰어하우스우주</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">입주민후기</a></li>
+                        </ul>
+                        <div id="sub-menu-detail">
+                            <ul>
+                                <li><a href="#">우주소개</a></li>
+                                <li><a href="#">CI/BI</a></li>
+                            </ul>
+                        </div>
+                        <div id="leave">
+                        <p><a href="#">집내놓기</a></p>
+                        </div>
+                    </div>
+                    <div id="login">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <P class="where">
+                어느 지역에<br> 
+                살고 싶으세요?
+            </P>
+            <div id="main-search">
+                <ul class="sub-search">
+                    <li class="area"><input type="search" value="지역"></li>
+                    <li>
+                        <span>성별타입</span>
+                        <ul id="gender-option">
+                            <li>선택안함</li>
+                            <li>여성전용</li>
+                            <li>남성전용</li>
+                            <li>남녀공용</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>룸형태</span>
+                        <ul id="room-option">
+                            <li>선택안함</li>
+                            <li>1인실</li>
+                            <li>2인실</li>
+                            <li>3인실</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>주거유형</span>
+                        <ul id="room-option">
+                            <li>선택안함</li>
+                            <li>아파트</li>
+                            <li>단독주택</li>
+                            <li>빌라</li>
+                        </ul>
+                    </li>
+                    <li class="btn"> 
+                        <button type="button">
+                            적용하기
+                        </button>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <section id="banner">
+       <ul class="image-move">
+           <li><a class="fadein" href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/banner/new.png"></a></li>
+           <li><a class="fadein" href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/banner/main_Banner_cb.png"></a></li>
+           <li><a class="fadein" href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/banner/promotion_1.png"></a></li>
+           <li><a class="fadein" href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/banner/main_Banner_cb.png"></a></li>
+       </ul>   
+       <ul class="banBtn">
+           <li onclick="bannerBtn(0)"></li>
+           <li onclick="bannerBtn(1)"></li>
+           <li onclick="bannerBtn(2)"></li>
+           <li onclick="bannerBtn(3)"></li>
+       </ul>   
+    </section>
+    <section id="main-bottom">
+        <div id="main-bottom-outline">
+            <img src="https://www.woozoo.kr/assets/main/main_page_bottom_img1.png">
+            <ul>
+                <li class="check">
+                    <p class="checksize">
+                        쉐어하우스계약<br>이것만큼은 꼭 확인하세요
+                    </p>
+                    <img src="https://www.woozoo.kr/assets/main/main_page_bottom_img3.png">
+                </li>
+                <li class="check2">
+                    <p>
+                        쉐어하우스 우주는 표준계약서 작성을 원칙으로하며,<br>기업형 쉐어하우스로 안전한 입주 권리를 보장합니다.
+                    </p>
+                </li>
+                <li>
+                    <ul class="tab">
+                        <li>
+                            <div class="tab-1">
+                                <input type="text" id="tab-1" value="1. 쉐어하우스 안전한 계약을 위해 체크한 것은?">
+                                 <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime,<br>plicabo non itaque amet veniam illo nemo ipsa sapiente ad dignissi<br>iusto tempore quis est voluptas totam expedita consequuntur minima officiis!
+                                </p>
+                            </div>
+                            <div class="tab-2">
+                                <input type="text" id="tab-1" value="2. 하우스 메이트와 잘 지낼 수 있을까요?">
+                                 <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime,<br>plicabo non itaque amet veniam illo nemo ipsa sapiente ad dignissi<br>iusto tempore quis est voluptas totam expedita consequuntur minima officiis!
+                                </p>
+                            </div><div class="tab-3">
+                                <input type="text" id="tab-1" value="3. 우주라서 누릴 수 있는 혜택이 있나요??">
+                                 <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime,<br>plicabo non itaque amet veniam illo nemo ipsa sapiente ad dignissi<br>iusto tempore quis est voluptas totam expedita consequuntur minima officiis!
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="second-bottom">
+        <p>
+            우주에서<br> 이렇게 살고 있어요!
+        </p>
+        <ul class="real">
+            <li class="show"><a href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/review/02.png" alt=""></a></li>
+            <li class="show"><a href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/review/02.png" alt=""></a></li>
+            <li class="show"><a href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/review/02.png" alt=""></a></li>
+            <li class="show"><a href="#"><img src="https://woozoo.s3.amazonaws.com/uploads/front/review/02.png" alt=""></a></li>
+        </ul>
+        <ul class="photo-information">
+            <li>
+                <p>우주는 평생의 소중한 추억<br>연남동 우주하우스 이야기 </p>
+            </li>
+            <li>
+                <p>내게 생긴 또 다른 가족<br>혜와 우주하우스 이야기</p>
+            </li>
+            <li>
+                <p>재계약을 거듭한 이유<br>홍제동 우주하우스 이야기</p>
+            </li>
+            <li>
+                <p>든든해진 서울살이,<br>장충동 우주하우스 후기</p>
+            </li>
+        </ul>
+        <ul class="rdio">
+            <li id="btn2"></li>
+            <li id="btn2"></li>
+            <li id="rad2"></li>
+            <li id="rad2"></li>
+        </ul>
+    </section>
+    <section id="third-bottom">
+        <div id="main-bottom-outline1">
+            <p class="img-setting">
+            <img src="https://www.woozoo.kr/assets/main/main_page_bottom_img2.png">
+            </p>
+            <ul class="noconcern">
+                <li>
+                    <ul>
+                        <li class="noconcern-1">허위 매물 걱정은 NO!<br>실제 우주하우스를 둘러보세요.</li>
+                        <li class="concern-2">쉐어하우스가 처음이라 나에게 맞는방을 고르기 어렵다면<br>원하는 조건을 간단히 입력해주세요.<br>접수 당일 맞춤 상담을 통해 원하는 방을 추천해드립니다.</li>
+                        <li>우주하우스는 20세~41세만 입주 가능합니다.</li>
+                    </ul>
+                    <img src="https://www.woozoo.kr/assets/main/main_page_bottom_img3.png">
+               </li>
+                    <ul>
+                        <li><input type="text" placeholder="강동구"></li>
+                        <li><input type="text" placeholder="희망방문일자"></li>
+                        <li><input type="text" placeholder="입주희망시기"></li>
+                        <li>
+                            <ul>
+                                <li><input type="text" placeholder="이름"></li>
+                                <li><input type="text" placeholder="연락처"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <li>  
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <img src="https://woozoo.kr/assets/logos/woozoo-logo-f-3615e47dda9fd43c5f0686f35514f18d5eef807c97f3dbe7cb28b2db81f187e1.png" alt="logo">
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">개인정보정책</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+        <ul>
+            <li>© 2014-2016 · 셰어하우스우주(주), All Rights Reserved</li>
+            <li>대표자 : 김정현 사업자 등록번호 : 107 - 87 - 79911</li>
+            <li>서울특별시 강남구 신사동 561-31, 신웅타워2 16F</li>
+            <li>대표번호 : 02-2018-3700</li>
+            <li>입주 문의 : 02-2018-3718</li>
+            <li>위탁/투자 문의 : 02-2018-3720</li>
+            <li>홍보/제휴 문의 : 02-2018-3728</li>
+            <li>상담 가능시간 : 평일 10:00 ~ 18:00</li>
+        </ul>
+        <a href="#">woozoo가입하기</a>
+        <ul>
+            <li><a href="https://woozoo.kr/assets/sns_icons/naverpost-1d2244253d3336641b5492ce70abd4772c505abd1337c93a79bc673aa47b0cde.svg"></a></li>
+            <li><a href="https://woozoo.kr/assets/sns_icons/naverpost-1d2244253d3336641b5492ce70abd4772c505abd1337c93a79bc673aa47b0cde.svg"></a></li>
+            <li><a href="https://woozoo.kr/assets/sns_icons/naverpost-1d2244253d3336641b5492ce70abd4772c505abd1337c93a79bc673aa47b0cde.svg"></a></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript">
+        index = 0;
+        banner();
+
+        function banner(i){
+            li = document.querySelectorAll('.fadein');
+            if(index == li.length){
+                index = 0;
+            }
+            if(i != undefined){
+                index=i;
+            }
+            for(i=0; i<li.length ;i++){
+                if(i==index){
+                    li.item(i).setAttribute('class','fadein on');
+                    console.log(li);
+                }else{
+                    li.item(i).setAttribute('class','fadein');
+                    console.log(li);
+                }
+            }
+            index++
+        }
+        function bannerBtn(i){
+            clearInterval(rolling);
+			banner(i);
+		}
+		rolling = setInterval(banner,3000);
+        
+
+    // 스크롤 내릴 때 메뉴 색깔 바뀌는 것 
+        document.addEventListener('scroll',function(){
+            var a =document.documentElement.scrollTop;
+            if(a>50){
+                li = document.querySelector('#wrap');
+                li.style.background = 'white';
+            }else{
+                li = document.querySelector('#wrap');
+                li.style.background="none";
+            }
+        })
+
+
+        // window.onscroll = function(){scrollFunction()};
+        // function scrollFunction(){
+        //     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        //         li = document.querySelector('#wrap');
+        //         li.setAttribute('id','basic');              
+            
+        //     }else{
+        //         li = document.querySelector('#wrap');
+        //         li.style.background = 'white';
+        //     }
+        // }
+    </script>
+</body>
+</html>

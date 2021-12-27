@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: url(https://www.woozoo.kr/assets/main/main0810.jpg);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    width:100%;
+    height:1000px;
+}
+#wrap{
+    width:1910px;
+    height:87px;
+    border-bottom: 1px solid #c8cecf;
+    position:fixed;
+    z-index: 500;
+}
+#basic{
+    background-color: white;
+    
+
+}
+#wrap2{
+    width:1320px;
+    height:87px;
+    margin: 0 auto;
+    box-sizing:border-box;
+}
+#logo{
+    height:87px;
+    width:144px;
+    float:left;
+}
+#logo>img{
+    height:28px;
+    width:144px;
+    float:left;
+    padding-top: 30px;
+}
+#menu{
+    position:absolute;
+    float: right;
+}
+#sub-menu{
+    width:650px;
+    height:80px;
+    float:left;
+    padding-top: 30px;
+    margin-left: 600px;
+}
+#sub-menu-detail{
+    background-color: white;
+    width:153px;
+    height:100px;
+    position: absolute;
+    margin-left: 80px;
+    top: 80px;
+    display:none;
+}
+
+#menu>#sub-menu>ul>li>a{
+    float:left;
+    padding-left:25px;
+    color:black;
+}
+#leave>p{
+    border : 2px solid #ed3245;
+    border-radius: 18px;
+    font-size: 18px;
+    width:100px;
+    height:38px;
+    display:flex;
+    position:absolute;
+    top:25px;
+    margin-left:520px;
+}
+#leave>p>a{
+    font-weight: bold;
+    color:black;
+    padding-top:7px;
+    padding-left:15px;
+}
+#login{
+    position: relative;
+    width:150px;
+    height:80px;
+    float:right;
+    padding-top: 30px;
+ 
+}
+#menu>#login>ul>li{
+    position:relative;
+    float:left;
+    padding-right: 15px;
+}
+.where{
+    font-size: 3.4vw;
+    color:white;
+    font-weight: 600;
+    padding-top:200px;
+    display: inline-block;
+    text-shadow: 0 0 13px rgb(19 19 19 / 25%);
+    width:700px;
+    margin-left:280px;
+}
+#main-search{
+    background-color: white;
+    width:998px;
+    height: 72px;
+    border:1px solid  #c8cecf;
+    float:elft;
+    margin-top: 100px;
+    margin-left: 320px;
+}
+.area>input{
+    font-size: 19px;
+}
+#main-search>ul>li{
+    float:left;
+    width:167px;
+    height: 65px;
+    font-size: 19px;
+    border-left: 1px solid #c8cecf;
+    padding-left:20px;
+    padding-top: 25px;
+}
+#main-search>ul>.area>input{
+    border: 0px solid;
+}
+
+#main-search>ul>li>ul{
+    display:none;
+}
+.btn{
+
+    float:left;
+    padding-top: 20px;
+}
+.btn>button{
+    background-color: #FF4D5E;
+    width:80px;
+    height: 40px;
+    border:0px solid;
+    text-align: center;
+    line-height: 1;
+    font-size: 19px;
+}
+#banner{
+    width:1800px;
+    height: 220px;
+    margin: 50px 300px;
+    display: inline-block;
+}
+.image-move{
+    background-color: white;
+    width:1321px;
+    height: 220px;
+    border-radius: 200px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+.fadein>img{
+    width:1321px;
+    height: 220px;
+    text-align: center;
+    animation :fadein 3s;
+    animation-fill-mode:forwards;
+    
+}
+.fadein{
+    display:none;
+}
+.fadein.on{
+    display:block;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.banBtn{
+    padding-left:550px;
+    float:left;
+   
+}
+.banBtn>li{
+    position: relative;
+    z-index: 99999999;
+    float:left;
+    border: 2px white solid;
+    border-radius: 10px;
+    background-color: white;
+    width:20px;
+    height:20px;
+    margin-top: 180px;
+    margin-left:20px; 
+}
+#main-bottom{
+    margin:auto;
+    width:1320px;
+    height: 700px;;
+}
+#main-bottom-outline>img{
+    width:396px;
+    height:275px;
+    float:left;
+}
+#main-bottom-outline>.check{
+    float:left;
+    width:607px;
+    height: 110px;
+}
+.check{
+    margin-left:600px;
+}
+.checksize{
+    font-size: 35px;
+    font-weight: bold;
+    color:#8c8c8c;
+    line-height: 1.5;
+    width:560px;
+    height: 110px;
+    float:left;
+}
+#main-bottom-outline>.check>img{
+    float:right;
+}
+.check2{
+    float:left;
+    width:607px;
+    height:100px;
+    margin-left: 206px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top:20px;
+    color:#8c8c8c;
+}
+.tab{
+    clear:both;
+    margin-left:206px;
+    display: inline-block;   
+}
+.tab>li>div>p{
+    padding-left: 20px;
+}
+.tab>li>div>input{
+    width:660px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    padding-left:30px;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+/* .tab>li>div>input::after{
+}   */
+.tab-2>p,.tab-3>p{
+    display:none;
+}
+#second-bottom{
+    text-align: center;
+    width:1910px;
+    height: 600px;
+    background-color: #FAFAFA;
+    padding-top: 70px;
+}
+#second-bottom>p{
+    font-size: 40px;
+    color:#8c8c8c;
+    font-weight: bold;
+}
+#second-bottom>ul>li>a>img{
+    float:left;
+    width:298px;
+    height: 238px;
+    padding:30px 15px;
+    text-align: center;
+}
+.real{
+    position: relative;
+    margin-left: 300px;
+}
+.show{
+    animation: show 3s infinite ;
+    animation-fill-mode: forwards;
+}
+@keyframes show{
+    from{
+       
+    }to{
+       
+    }
+}
+.rdio{
+    width:100%;
+    clear:both;
+    float: left;
+    position:relative;
+    margin-left: 870px;
+    top:50px;
+}
+.rdio>li{
+    float:left;
+    border:2px solid #8c8c8c;
+    border-radius: 10px;
+    margin:0 10px ;
+    width:20px;
+    height: 20px;
+}
+.photo-information{
+    clear:both;
+    margin-left: 350px;
+}
+.photo-information>li{
+    float:left;
+    padding-right:100px;
+    text-align: center;
+    font-size: 20px;
+}
+#third-bottom{
+    width:1380px;
+    height: 1080px;
+    padding-top:170px;
+    margin-left: 295px;
+}
+#main-bottom-outline1{
+    width:660px;
+    height: 275px;
+    float:left;
+
+}
+.img-setting{
+    width:660px;
+    height: 275px;
+    float:left;
+    
+}
+.img-setting>img{
+    width:396px;
+    height: 275px;
+    margin-right: 66px;
+    
+}
+.noconcern{
+    position: absolute;
+    margin-left:700px;
+    width:660px;
+    height: 698px;
+}
+.noconcern-1{
+    color:#8c8c8c;
+    font-size: 40px ;
+    font-weight: bold;
+    position: absolute;
+}
+.noconcern>img{
+    position: absolute;
+
+}

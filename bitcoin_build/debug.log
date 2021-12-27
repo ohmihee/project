@@ -1,0 +1,284 @@
+
+
+
+
+
+2021-12-08T06:46:14Z Bitcoin Core version v22.99.0-fa3fb46b8172 (release build)
+2021-12-08T06:46:14Z Qt 5.15.2 (static), plugin=windows (static)
+2021-12-08T06:46:14Z Static plugins:
+2021-12-08T06:46:14Z  QWindowsIntegrationPlugin, version 331520
+2021-12-08T06:46:14Z  QWindowsVistaStylePlugin, version 331520
+2021-12-08T06:46:14Z Style: windowsvista / QWindowsVistaStyle
+2021-12-08T06:46:14Z System: Windows 10 Version 2009, x86_64-little_endian-llp64
+2021-12-08T06:46:14Z Screen: \\.\DISPLAY1 1920x1080, pixel ratio=1.0
+2021-12-08T06:46:16Z Assuming ancestors of block 00000000000000000008a89e854d57e5667df88f1cdef6fde2fbca1de5b639ad have valid signatures.
+2021-12-08T06:46:16Z Setting nMinimumChainWork=00000000000000000000000000000000000000001fa4663bbbe19f82de910280
+2021-12-08T06:46:16Z Using the 'shani(1way,2way)' SHA256 implementation
+2021-12-08T06:46:16Z Using RdSeed as additional entropy source
+2021-12-08T06:46:16Z Using RdRand as an additional entropy source
+2021-12-08T06:46:16Z Default data directory C:\Users\오미희\AppData\Roaming\Bitcoin
+2021-12-08T06:46:16Z Using data directory c:\Users\오미희\Desktop\bitcoin_build
+2021-12-08T06:46:16Z Config file: c:\Users\오미희\Desktop\bitcoin_build\bitcoin.conf (not found, skipping)
+2021-12-08T06:46:16Z Command-line arg: datadir="c:\\Users/오미희/Desktop/bitcoin_build"
+2021-12-08T06:46:16Z Using at most 125 automatic connections (2048 file descriptors available)
+2021-12-08T06:46:16Z GUI: "registerShutdownBlockReason: Successfully registered: Bitcoin Core didn't yet exit safely…"
+2021-12-08T06:46:16Z Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2021-12-08T06:46:16Z Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2021-12-08T06:46:16Z Script verification uses 7 additional threads
+2021-12-08T06:46:16Z scheduler thread start
+2021-12-08T06:46:16Z Using wallet directory c:\Users\오미희\Desktop\bitcoin_build
+2021-12-08T06:46:16Z init message: Verifying wallet(s)…
+2021-12-08T06:46:16Z Using /16 prefix for IP bucketing
+2021-12-08T06:46:16Z init message: Loading P2P addresses…
+2021-12-08T06:46:16Z Creating peers.dat because the file was not found ("c:\Users\오미희\Desktop\bitcoin_build\peers.dat")
+2021-12-08T06:46:16Z init message: Loading banlist…
+2021-12-08T06:46:16Z Recreating the banlist database
+2021-12-08T06:46:16Z SetNetworkActive: true
+2021-12-08T06:46:16Z Failed to read fee estimates from c:\Users\오미희\Desktop\bitcoin_build\fee_estimates.dat. Continue anyway.
+2021-12-08T06:46:16Z Cache configuration:
+2021-12-08T06:46:16Z * Using 2.0 MiB for block index database
+2021-12-08T06:46:16Z * Using 8.0 MiB for chain state database
+2021-12-08T06:46:16Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2021-12-08T06:46:16Z init message: Loading block index…
+2021-12-08T06:46:16Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2021-12-08T06:46:16Z Opening LevelDB in c:\Users\오미희\Desktop\bitcoin_build\blocks\index
+2021-12-08T06:46:16Z Opened LevelDB successfully
+2021-12-08T06:46:16Z Using obfuscation key for c:\Users\오미희\Desktop\bitcoin_build\blocks\index: 0000000000000000
+2021-12-08T06:46:16Z LoadBlockIndexDB: last block file = 0
+2021-12-08T06:46:16Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2021-12-08T06:46:16Z Checking all blk files are present...
+2021-12-08T06:46:16Z Initializing databases...
+2021-12-08T06:46:16Z Opening LevelDB in c:\Users\오미희\Desktop\bitcoin_build\chainstate
+2021-12-08T06:46:16Z Opened LevelDB successfully
+2021-12-08T06:46:16Z Wrote new obfuscate key for c:\Users\오미희\Desktop\bitcoin_build\chainstate: f73c5b949c700f28
+2021-12-08T06:46:16Z Using obfuscation key for c:\Users\오미희\Desktop\bitcoin_build\chainstate: f73c5b949c700f28
+2021-12-08T06:46:16Z  block index             215ms
+2021-12-08T06:46:16Z loadblk thread start
+2021-12-08T06:46:16Z UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03T18:15:05Z' progress=0.000000 cache=0.0MiB(0txo)
+2021-12-08T06:46:16Z Failed to open mempool file from disk. Continuing anyway.
+2021-12-08T06:46:16Z loadblk thread exit
+2021-12-08T06:46:16Z block tree size = 1
+2021-12-08T06:46:16Z nBestHeight = 0
+2021-12-08T06:46:16Z torcontrol thread start
+2021-12-08T06:46:16Z Bound to 127.0.0.1:8334
+2021-12-08T06:46:16Z Bound to [::]:8333
+2021-12-08T06:46:16Z Bound to 0.0.0.0:8333
+2021-12-08T06:46:16Z 0 block-relay-only anchors will be tried for connections.
+2021-12-08T06:46:16Z init message: Starting network threads…
+2021-12-08T06:46:16Z net thread start
+2021-12-08T06:46:16Z init message: 로딩 완료
+2021-12-08T06:46:16Z dnsseed thread start
+2021-12-08T06:46:16Z opencon thread start
+2021-12-08T06:46:16Z addcon thread start
+2021-12-08T06:46:16Z msghand thread start
+2021-12-08T06:46:16Z Loading addresses from DNS seed seed.bitcoin.wiz.biz.
+2021-12-08T06:46:16Z GUI: Platform customization: "windows"
+2021-12-08T06:46:17Z Loading addresses from DNS seed seed.bitcoin.sprovoost.nl.
+2021-12-08T06:46:17Z Loading addresses from DNS seed dnsseed.bitcoin.dashjr.org.
+2021-12-08T06:46:18Z Loading addresses from DNS seed seed.bitcoinstats.com.
+2021-12-08T06:46:19Z Loading addresses from DNS seed seed.bitcoin.jonasschnelli.ch.
+2021-12-08T06:46:20Z Loading addresses from DNS seed seed.btc.petertodd.org.
+2021-12-08T06:46:20Z Loading addresses from DNS seed dnsseed.emzy.de.
+2021-12-08T06:46:21Z Loading addresses from DNS seed dnsseed.bluematt.me.
+2021-12-08T06:46:22Z Loading addresses from DNS seed seed.bitcoin.sipa.be.
+2021-12-08T06:46:23Z New outbound peer connected: version: 70016, blocks=713171, peer=0 (outbound-full-relay)
+2021-12-08T06:46:23Z 209 addresses found from DNS seeds
+2021-12-08T06:46:23Z dnsseed thread exit
+2021-12-08T06:46:23Z New outbound peer connected: version: 70015, blocks=713171, peer=1 (outbound-full-relay)
+2021-12-08T06:46:23Z Synchronizing blockheaders, height: 2000 (~0.29%)
+2021-12-08T06:46:26Z New outbound peer connected: version: 70016, blocks=713171, peer=2 (outbound-full-relay)
+2021-12-08T06:46:26Z New outbound peer connected: version: 70016, blocks=713171, peer=3 (outbound-full-relay)
+2021-12-08T06:46:27Z New outbound peer connected: version: 70015, blocks=713171, peer=4 (outbound-full-relay)
+2021-12-08T06:46:35Z Synchronizing blockheaders, height: 4000 (~0.59%)
+2021-12-08T06:46:40Z New outbound peer connected: version: 70016, blocks=713171, peer=5 (outbound-full-relay)
+2021-12-08T06:46:42Z Synchronizing blockheaders, height: 6000 (~0.89%)
+2021-12-08T06:46:44Z Synchronizing blockheaders, height: 8000 (~1.18%)
+2021-12-08T06:46:44Z Synchronizing blockheaders, height: 10000 (~1.48%)
+2021-12-08T06:46:46Z Synchronizing blockheaders, height: 12000 (~1.78%)
+2021-12-08T06:46:47Z Synchronizing blockheaders, height: 14000 (~2.07%)
+2021-12-08T06:46:48Z Synchronizing blockheaders, height: 16000 (~2.37%)
+2021-12-08T06:46:50Z Synchronizing blockheaders, height: 18000 (~2.67%)
+2021-12-08T06:46:52Z Synchronizing blockheaders, height: 20000 (~2.98%)
+2021-12-08T06:46:54Z Synchronizing blockheaders, height: 22000 (~3.30%)
+2021-12-08T06:46:59Z Synchronizing blockheaders, height: 24000 (~3.61%)
+2021-12-08T06:47:01Z New outbound peer connected: version: 70015, blocks=713171, peer=6 (outbound-full-relay)
+2021-12-08T06:47:08Z tor: Thread interrupt
+2021-12-08T06:47:08Z addcon thread exit
+2021-12-08T06:47:08Z torcontrol thread exit
+2021-12-08T06:47:08Z Shutdown: In progress...
+2021-12-08T06:47:08Z msghand thread exit
+2021-12-08T06:47:08Z net thread exit
+2021-12-08T06:47:10Z opencon thread exit
+2021-12-08T06:47:10Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2021-12-08T06:47:10Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.00s)
+2021-12-08T06:47:10Z scheduler thread exit
+2021-12-08T06:47:10Z Writing 0 unbroadcast transactions to disk.
+2021-12-08T06:47:10Z Dumped mempool: 0s to copy, 0.002998s to dump
+2021-12-08T06:47:10Z Shutdown: done
+
+
+
+
+
+2021-12-08T06:47:28Z Bitcoin Core version v22.99.0-fa3fb46b8172 (release build)
+2021-12-08T06:47:28Z Qt 5.15.2 (static), plugin=windows (static)
+2021-12-08T06:47:28Z Static plugins:
+2021-12-08T06:47:28Z  QWindowsIntegrationPlugin, version 331520
+2021-12-08T06:47:28Z  QWindowsVistaStylePlugin, version 331520
+2021-12-08T06:47:28Z Style: windowsvista / QWindowsVistaStyle
+2021-12-08T06:47:28Z System: Windows 10 Version 2009, x86_64-little_endian-llp64
+2021-12-08T06:47:28Z Screen: \\.\DISPLAY1 1920x1080, pixel ratio=1.0
+2021-12-08T06:47:29Z Assuming ancestors of block 00000000000000000008a89e854d57e5667df88f1cdef6fde2fbca1de5b639ad have valid signatures.
+2021-12-08T06:47:29Z Setting nMinimumChainWork=00000000000000000000000000000000000000001fa4663bbbe19f82de910280
+2021-12-08T06:47:29Z Using the 'shani(1way,2way)' SHA256 implementation
+2021-12-08T06:47:29Z Using RdSeed as additional entropy source
+2021-12-08T06:47:29Z Using RdRand as an additional entropy source
+2021-12-08T06:47:29Z Default data directory C:\Users\오미희\AppData\Roaming\Bitcoin
+2021-12-08T06:47:29Z Using data directory c:\Users\오미희\Desktop\bitcoin_build
+2021-12-08T06:47:29Z Config file: c:\Users\오미희\Desktop\bitcoin_build\bitcoin.conf (not found, skipping)
+2021-12-08T06:47:29Z Command-line arg: datadir="c:\\Users/오미희/Desktop/bitcoin_build"
+2021-12-08T06:47:29Z Using at most 125 automatic connections (2048 file descriptors available)
+2021-12-08T06:47:29Z GUI: "registerShutdownBlockReason: Successfully registered: Bitcoin Core didn't yet exit safely…"
+2021-12-08T06:47:29Z Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2021-12-08T06:47:29Z Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2021-12-08T06:47:29Z Script verification uses 7 additional threads
+2021-12-08T06:47:29Z scheduler thread start
+2021-12-08T06:47:29Z Using wallet directory c:\Users\오미희\Desktop\bitcoin_build
+2021-12-08T06:47:29Z init message: Verifying wallet(s)…
+2021-12-08T06:47:29Z Using /16 prefix for IP bucketing
+2021-12-08T06:47:29Z init message: Loading P2P addresses…
+2021-12-08T06:47:29Z Loaded 3579 addresses from peers.dat  8ms
+2021-12-08T06:47:29Z init message: Loading banlist…
+2021-12-08T06:47:29Z SetNetworkActive: true
+2021-12-08T06:47:29Z Cache configuration:
+2021-12-08T06:47:29Z * Using 2.0 MiB for block index database
+2021-12-08T06:47:29Z * Using 8.0 MiB for chain state database
+2021-12-08T06:47:29Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2021-12-08T06:47:29Z init message: Loading block index…
+2021-12-08T06:47:29Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2021-12-08T06:47:29Z Opening LevelDB in c:\Users\오미희\Desktop\bitcoin_build\blocks\index
+2021-12-08T06:47:29Z Opened LevelDB successfully
+2021-12-08T06:47:29Z Using obfuscation key for c:\Users\오미희\Desktop\bitcoin_build\blocks\index: 0000000000000000
+2021-12-08T06:47:29Z LoadBlockIndexDB: last block file = 0
+2021-12-08T06:47:29Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2021-12-08T06:47:29Z Checking all blk files are present...
+2021-12-08T06:47:29Z Opening LevelDB in c:\Users\오미희\Desktop\bitcoin_build\chainstate
+2021-12-08T06:47:29Z Opened LevelDB successfully
+2021-12-08T06:47:29Z Using obfuscation key for c:\Users\오미희\Desktop\bitcoin_build\chainstate: f73c5b949c700f28
+2021-12-08T06:47:29Z Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03T18:15:05Z progress=0.000000
+2021-12-08T06:47:29Z init message: Verifying blocks…
+2021-12-08T06:47:29Z  block index             151ms
+2021-12-08T06:47:29Z block tree size = 24001
+2021-12-08T06:47:29Z nBestHeight = 0
+2021-12-08T06:47:29Z loadblk thread start
+2021-12-08T06:47:29Z Imported mempool transactions from disk: 0 succeeded, 0 failed, 0 expired, 0 already there, 0 waiting for initial broadcast
+2021-12-08T06:47:29Z loadblk thread exit
+2021-12-08T06:47:29Z Bound to 127.0.0.1:8334
+2021-12-08T06:47:29Z Bound to [::]:8333
+2021-12-08T06:47:29Z torcontrol thread start
+2021-12-08T06:47:29Z Bound to 0.0.0.0:8333
+2021-12-08T06:47:29Z Loaded 0 addresses from "anchors.dat"
+2021-12-08T06:47:29Z 0 block-relay-only anchors will be tried for connections.
+2021-12-08T06:47:29Z init message: Starting network threads…
+2021-12-08T06:47:29Z net thread start
+2021-12-08T06:47:29Z init message: 로딩 완료
+2021-12-08T06:47:29Z addcon thread start
+2021-12-08T06:47:29Z dnsseed thread start
+2021-12-08T06:47:29Z Waiting 300 seconds before querying DNS seeds.
+2021-12-08T06:47:29Z opencon thread start
+2021-12-08T06:47:29Z msghand thread start
+2021-12-08T06:47:29Z GUI: Platform customization: "windows"
+2021-12-08T06:47:36Z New outbound peer connected: version: 70016, blocks=713171, peer=0 (outbound-full-relay)
+2021-12-08T06:47:38Z New outbound peer connected: version: 70015, blocks=713171, peer=1 (outbound-full-relay)
+2021-12-08T06:47:38Z New outbound peer connected: version: 70015, blocks=713171, peer=2 (outbound-full-relay)
+2021-12-08T06:47:39Z Synchronizing blockheaders, height: 25999 (~3.92%)
+2021-12-08T06:47:40Z Synchronizing blockheaders, height: 27999 (~4.24%)
+2021-12-08T06:47:40Z P2P peers available. Skipped DNS seeding.
+2021-12-08T06:47:40Z dnsseed thread exit
+2021-12-08T06:47:41Z Synchronizing blockheaders, height: 29999 (~4.55%)
+2021-12-08T06:47:42Z Synchronizing blockheaders, height: 31999 (~4.85%)
+2021-12-08T06:47:42Z Synchronizing blockheaders, height: 33999 (~5.15%)
+2021-12-08T06:47:45Z New outbound peer connected: version: 70016, blocks=713171, peer=3 (outbound-full-relay)
+2021-12-08T06:47:45Z Synchronizing blockheaders, height: 35999 (~5.45%)
+2021-12-08T06:47:45Z New outbound peer connected: version: 70015, blocks=713171, peer=4 (outbound-full-relay)
+2021-12-08T06:47:48Z New outbound peer connected: version: 70016, blocks=713171, peer=6 (outbound-full-relay)
+2021-12-08T06:47:48Z Synchronizing blockheaders, height: 37999 (~5.75%)
+2021-12-08T06:47:48Z New outbound peer connected: version: 70015, blocks=713171, peer=5 (outbound-full-relay)
+2021-12-08T06:47:50Z New outbound peer connected: version: 70015, blocks=713168, peer=8 (block-relay-only)
+2021-12-08T06:47:51Z New outbound peer connected: version: 70016, blocks=713171, peer=9 (block-relay-only)
+2021-12-08T06:47:51Z Synchronizing blockheaders, height: 39999 (~6.05%)
+2021-12-08T06:47:55Z Synchronizing blockheaders, height: 41999 (~6.34%)
+2021-12-08T06:47:59Z New outbound peer connected: version: 70016, blocks=713171, peer=10 (block-relay-only)
+2021-12-08T06:48:00Z Synchronizing blockheaders, height: 43999 (~6.64%)
+2021-12-08T06:48:00Z New outbound peer connected: version: 70016, blocks=713171, peer=11 (block-relay-only)
+2021-12-08T06:48:03Z Synchronizing blockheaders, height: 45999 (~6.94%)
+2021-12-08T06:48:06Z Synchronizing blockheaders, height: 47999 (~7.24%)
+2021-12-08T06:48:10Z Synchronizing blockheaders, height: 49999 (~7.54%)
+2021-12-08T06:48:11Z Synchronizing blockheaders, height: 51999 (~7.83%)
+2021-12-08T06:48:13Z Synchronizing blockheaders, height: 53999 (~8.13%)
+2021-12-08T06:48:15Z Synchronizing blockheaders, height: 55999 (~8.43%)
+2021-12-08T06:48:16Z New outbound peer connected: version: 70015, blocks=713171, peer=7 (outbound-full-relay)
+2021-12-08T06:48:16Z Synchronizing blockheaders, height: 57999 (~8.73%)
+2021-12-08T06:48:18Z Synchronizing blockheaders, height: 59999 (~9.02%)
+2021-12-08T06:48:19Z Synchronizing blockheaders, height: 61999 (~9.32%)
+2021-12-08T06:48:19Z Synchronizing blockheaders, height: 63999 (~9.62%)
+2021-12-08T06:48:24Z Synchronizing blockheaders, height: 65999 (~9.91%)
+2021-12-08T06:48:25Z Synchronizing blockheaders, height: 67999 (~10.19%)
+2021-12-08T06:48:28Z Synchronizing blockheaders, height: 69999 (~10.47%)
+2021-12-08T06:48:36Z Synchronizing blockheaders, height: 71999 (~10.76%)
+2021-12-08T06:48:39Z Synchronizing blockheaders, height: 73999 (~11.05%)
+2021-12-08T06:48:43Z Synchronizing blockheaders, height: 75999 (~11.35%)
+2021-12-08T06:48:45Z Using SQLite Version 3.32.1
+2021-12-08T06:48:45Z Using wallet c:\Users\오미희\Desktop\bitcoin_build\wallet
+2021-12-08T06:48:45Z init message: Loading wallet…
+2021-12-08T06:48:45Z [wallet] Wallet File Version = 10500
+2021-12-08T06:48:45Z [wallet] Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total. Unknown wallet records: 0
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 9e793ae97547a9c133b7cb3a21890c1d16b8ebf2898ffba114dcec4c78d0029f, type = 0, internal = 0
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 83b7d0391f34f070b63cd235b454a8bf34c7fa8a2c01051ca95597e496e27542, type = 1, internal = 0
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = b4a2efb117d16884ecc71b8f5f696de2571ec77cc39a99ee1ce7bebdf7d6a6a7, type = 2, internal = 0
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 6629dda9aa8a2c36b82f6a768d246eb14eca4f0f715310d588248471f4fd2e5e, type = 3, internal = 0
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 5941dcf7e9e6fbaec48cc1361050a9cf8eb9562768285b6d0968295764991dd6, type = 0, internal = 1
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 89be08fb65335dab5b8832349d41843e975ebc99aa367a32fddcc90c5d89f4be, type = 1, internal = 1
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 781886c4d311df8a2843b576281582a1423b4eef3af19ffd8241fb6159df93d0, type = 2, internal = 1
+2021-12-08T06:48:45Z [wallet] Setting spkMan to active: id = 8f10cef571fae839ec5b7b111e24738b84d796d63cc28c470fa018388856c828, type = 3, internal = 1
+2021-12-08T06:48:45Z [wallet] Wallet completed loading in             812ms
+2021-12-08T06:48:46Z [wallet] setKeyPool.size() = 8000
+2021-12-08T06:48:46Z [wallet] mapWallet.size() = 0
+2021-12-08T06:48:46Z [wallet] m_address_book.size() = 0
+2021-12-08T06:48:46Z Synchronizing blockheaders, height: 77999 (~11.64%)
+2021-12-08T06:48:48Z Synchronizing blockheaders, height: 79999 (~11.93%)
+2021-12-08T06:48:49Z Synchronizing blockheaders, height: 81999 (~12.22%)
+2021-12-08T06:48:50Z Synchronizing blockheaders, height: 83999 (~12.51%)
+2021-12-08T06:48:51Z Synchronizing blockheaders, height: 85999 (~12.80%)
+2021-12-08T06:48:52Z Synchronizing blockheaders, height: 87999 (~13.08%)
+2021-12-08T06:48:52Z Synchronizing blockheaders, height: 89999 (~13.37%)
+2021-12-08T06:48:54Z Synchronizing blockheaders, height: 91999 (~13.65%)
+2021-12-08T06:48:55Z Synchronizing blockheaders, height: 93999 (~13.94%)
+2021-12-08T06:48:58Z New outbound peer connected: version: 70016, blocks=713171, peer=12 (outbound-full-relay)
+2021-12-08T06:48:58Z Synchronizing blockheaders, height: 95999 (~14.23%)
+2021-12-08T06:49:01Z Synchronizing blockheaders, height: 97999 (~14.51%)
+2021-12-08T06:49:04Z Synchronizing blockheaders, height: 99999 (~14.80%)
+2021-12-08T06:49:07Z Synchronizing blockheaders, height: 101999 (~15.09%)
+2021-12-08T06:49:08Z Synchronizing blockheaders, height: 103999 (~15.38%)
+2021-12-08T06:49:09Z Synchronizing blockheaders, height: 105999 (~15.67%)
+2021-12-08T06:49:13Z Synchronizing blockheaders, height: 107999 (~15.96%)
+2021-12-08T06:49:16Z Synchronizing blockheaders, height: 109999 (~16.24%)
+2021-12-08T06:49:20Z Synchronizing blockheaders, height: 111999 (~16.52%)
+2021-12-08T06:49:27Z Synchronizing blockheaders, height: 113999 (~16.81%)
+2021-12-08T06:49:28Z Synchronizing blockheaders, height: 115999 (~17.10%)
+2021-12-08T06:49:31Z Synchronizing blockheaders, height: 117999 (~17.39%)
+2021-12-08T06:49:33Z Synchronizing blockheaders, height: 119999 (~17.68%)
+2021-12-08T06:49:33Z tor: Thread interrupt
+2021-12-08T06:49:33Z opencon thread exit
+2021-12-08T06:49:33Z addcon thread exit
+2021-12-08T06:49:33Z torcontrol thread exit
+2021-12-08T06:49:33Z Shutdown: In progress...
+2021-12-08T06:49:33Z net thread exit
+2021-12-08T06:49:33Z msghand thread exit
+2021-12-08T06:49:33Z DumpAnchors: Flush 2 outbound block-relay-only peer addresses to anchors.dat started
+2021-12-08T06:49:33Z DumpAnchors: Flush 2 outbound block-relay-only peer addresses to anchors.dat completed (0.01s)
+2021-12-08T06:49:33Z scheduler thread exit
+2021-12-08T06:49:33Z Writing 0 unbroadcast transactions to disk.
+2021-12-08T06:49:33Z Dumped mempool: 0s to copy, 0.010845s to dump
+2021-12-08T06:49:33Z [wallet] Releasing wallet
+2021-12-08T06:49:33Z Shutdown: done

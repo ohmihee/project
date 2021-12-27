@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <td>e-mail</td>
+        <td>password</td>
+        <td>name</td>
+        <td>birth</td>
+        <td>gender</td>
+        <td>phonenum</td>
+        <td>add_permit</td>
+        <td>userdt</td>
+    </tr>
+    {% for item in userList %}
+    <tr>
+        <td>{{item.dataValues.email}}</td>
+        <td>{{item.dataValues.pw}}</td>
+        <td>{{item.dataValues.name}}</td>
+        <td>{{item.dataValues.birth}}</td>
+        <td>{{item.dataValues.gender}}</td>
+        <td>{{item.dataValues.contact}}</td>
+        <td>{{item.dataValues.add_option}}</td>
+        <td>{{item.dataValues.userdt}}</td>
+    </tr>
+    {% endfor %}
+</table>

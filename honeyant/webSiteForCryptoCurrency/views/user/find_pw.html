@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href="/user/user.css">
+</head>
+<body>
+    
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div class="findpw_wrapper">
+    <form action="/findpw_success" method="post">
+        <h1>비밀번호 복구</h1>
+        <input type="text" class="mt20" id ="password" name ="pssowrd" placeholder="E-Mail입력">
+        <p class = "signup_capcha mt20">캡챠인증</p>
+        <button class="g-recaptcha mt20" 
+            data-sitekey="reCAPTCHA_site_key" 
+            data-callback='onSubmit' 
+            data-action='submit'>Submit
+        </button>
+        <button class="submit find_pw">다음</button>
+    </form>
+</div>
+
+</body>
+</html>

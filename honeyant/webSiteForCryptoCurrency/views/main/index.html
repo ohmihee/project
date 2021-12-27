@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="stylesheet" href="./main/main.css">
+    <link href="./main/Honeypot.png" rel="shortcut icon" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="header_wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./main/로고.png" alt="">
+                        <h2 class="main_title">Honey ants</h2>
+                    </a> 
+                </div>
+                <section class="gnb">
+                    <ul class="gnb_con">
+                        <li><a href="#">간편구매</a></li>
+                        <li><a href="#">거래소</a></li>
+                        <li><a href="#">프로차트</a></li>
+                        <li><a href="#">코인정보</a></li>
+                    </ul>
+                </section>
+                <div class="my_area">
+                    {% if isLogin %}
+                    <button>마이페이지</button>
+                    <button onclick="location.href='/user/logout'">로그아웃</button>
+                    {% else %}
+                    <button onclick="location.href='/user/signup/agree'">회원가입</button>
+                    <button onclick="location.href='/user'">로그인</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div id="divide"></div>
+        <section class="main">
+            <div class="main_con">
+                <div id="coin_chart">
+                    
+                </div>
+                <div class="coin_list">
+                    <h2>코인 리스트</h2>
+                    <ul>
+                    
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="main2">
+            <div class="main_con2">
+                <div class="Elon_twiter">
+                    <h2>Elon Musk Twitter</h2>
+                    <a class="twitter-timeline" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw"></a>
+                </div>
+                <div class="coin_issue">
+                    <h2>Coin issue</h2>
+                {% for item in issue %}               
+                <ul>
+                    <a href={{item.url}} target="_blank">
+                        <li>{{item.title}}</li>
+                    </a>
+                    
+                </ul>
+                {% endfor %}
+                </div>
+            </div>
+        </section>
+        <div class="waist"></div>
+        <section class="main3">
+            <div class="main_con3">
+                <div class="chat">
+                    <iframe src="3.38.68.37:3000/" width=100% height=500 scrolling="no" frameborder=0 margininheight=0 margininwidth=0 ailgn="top"></iframe>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer_con">
+                <div class="footer_main">
+                    <div class="footer_main_con">
+                        <strong>고객센터</strong> 10:00~19:00(주말 및 공휴일 제외) <br>
+                        1:1 채팅상담 | 카카오톡 상담 | 온라인 고객센터 
+                    </div>
+                    <div class="footer_main_con2">
+                        (주)허니비|사업자등록번호 123-45-67891<br>
+                        서울특별시 강동구 천호동 올림픽로 651 3층<br>
+                        허니비(우 05248)
+    
+                        상장 및 제휴 문의  <img src="../../public/main/mail.png" alt="">
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <h4>회사</h4>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">코인원코어</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                        <ul>
+                            <h4>안내</h4>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">보안안내</a></li>
+                            <li><a href="#">계정정보변경</a></li>
+                            <li><a href="#">상장/폐지기준안내</a></li>
+                            <li><a href="#">계정잠금</a></li>
+                        </ul>
+                        <ul>
+                            <h4>정책</h4>
+                            <li><a href="#">이용약관 및 규정</a></li>
+                            <li><a href="#">API 이용약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li> 
+                            <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../coin_issue.js"></script>
+    <script type="text/javascript">        
+const timer = ms => new Promise(res => setTimeout(res,ms));
+        
+        // apii=document.querySelector('');
+        async function callbackhell(){
+            const url2 = '3.38.68.37:3001/info'
+            const options2 = {method: 'POST', headers: {Accept: 'application/json'}};
+            
+            let fet = await fetch(url2, options2)
+            .then(res=>{
+                return res.json()
+            })
+            .then(json=>{
+                const result = json['coin']
+                document.title = result[0][0].trade_price.toLocaleString('ko-KR');;
+        
+                result.sort(function (a, b) { 
+                    return a[0].trade_price < b[0].trade_price ? 1 : -1; 
+                });
+                
+                let list = document.querySelector('.coin_list > ul');
+                let coinList = document.querySelectorAll('.coin_list > ul > li');
+                for(var i=0; i<result.length;i++){
+                    if(coinList[0]==undefined){
+                        
+                        let li = document.createElement('li');
+        
+                        let p = document.createElement('p');
+                        p.innerHTML = result[i][0].market;
+                        p.setAttribute('onclick',`clickCoin('USDT_${result[i][0].market.split("-")[1]}')`)
+            
+                        let h5 = document.createElement('h5');
+                        let span = document.createElement('span');
+                        span.innerHTML = result[i][0].trade_price.toLocaleString('ko-KR');
+        
+                        var per = `${Math.round(result[i][0].change_rate * 10000) / 100}%`;
+                        if(result[i][0].change == "FALL"){
+                            h5.innerHTML = `-${per}`;
+                            h5.style.color = '#4682B4';
+                            span.style.color = '#4682B4';
+                        }else if(result[i][0].change == "RISE"){
+                            h5.innerHTML = per;
+                            h5.style.color = 'red';
+                            span.style.color = 'red';
+                        }else{
+                            h5.innerHTML = per;
+                            h5.style.color = '#383838';
+                            span.style.color = '#383838';
+                        }
+        
+                        li.appendChild(p);
+                        li.appendChild(span);
+                        li.appendChild(h5);
+                        list.appendChild(li);
+                        
+                    }else{
+                        
+                        const span = coinList[i].querySelector('span');
+                        const h5 = coinList[i].querySelector('h5');
+                    
+                        span.innerHTML = result[i][0].trade_price.toLocaleString('ko-KR');
+        
+                        var per = `${Math.round(result[i][0].change_rate * 10000) / 100}%`;
+                        if(result[i][0].change == "FALL"){
+                            h5.innerHTML = `-${per}`;
+                            h5.style.color = '#4682B4';
+                            span.style.color = '#4682B4';
+                        }else if(result[i][0].change == "RISE"){
+                            h5.innerHTML = per;
+                            h5.style.color = 'red';
+                            span.style.color = 'red';
+                        }else{
+                            h5.innerHTML = per;
+                            h5.style.color = '#383838';
+                            span.style.color = '#383838';
+                        }
+                        
+                    }
+                    
+                }
+            })
+            .catch(()=>{
+                timer(3000)
+                callbackhell();
+            })
+        
+            
+            
+        }
+      
+        function clickCoin(coin){
+            var chartdata = [];
+            $.getJSON(`https://poloniex.com/public?command=returnChartData&currencyPair=${coin}&start=1455699200&end=9999999999&period=14400`, function (data) {
+                $.each(data, function(i, item){
+                    chartdata.push([item.date*1000, item.open, item.high, item.low, item.close]);
+                });
+            }).done(function(){
+                Highcharts.stockChart('coin_chart',{
+                    title: {
+                        text: `${coin}`
+                    },
+                    rangeSelector: {
+                        buttons: [
+                            {type: 'hour',count: 1,text: '1h'}, 
+                            {type: 'day',count: 1,text: '1d'}, 
+                            {type: 'all',count: 1,text: 'All'}
+                        ],
+                        selected: 2,
+                        inputEnabled: true
+                    },
+                    plotOptions: {
+                        candlestick: {
+                            downColor: 'blue',
+                            upColor: 'red'
+                        }
+                    },
+                    series: [{
+                        name: `${coin}`,
+                        type: 'candlestick',
+                        data: chartdata,
+                        tooltip: {
+                            valueDecimals: 8
+                        }
+                    }]
+                });
+            });
+        }
+        
+        
+        
+        clickCoin('USDT_BTC');
+        callbackhell();
+        setInterval(callbackhell,4000);
+
+    </script>
+</body>
+</html>

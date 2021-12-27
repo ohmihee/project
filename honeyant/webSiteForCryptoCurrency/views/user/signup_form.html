@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href="/user/user.css">
+</head>
+<body>
+    
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div class="signup_wrapper">
+    
+    <form name= "user_form" action = "/user/signup/success" method="post">
+        <h1>회원가입</h1>
+        <input type="text" value = "{{chk}}" name = "add_option" class = "hidden">
+        <div class = "signup_number">
+            <h5 class= "inblock ft_16">약관동의</h5>
+            <div class= "signup_bar"></div>
+            <h5 class= "inblock ft_16 red">정보입력</h5>
+        </div>
+
+    <!--회원가입 정보 입력-->
+        
+        <p class="signup_text mt20" ><label for="email" >이메일</p>
+        <input type = "email"  id ="email" class= "mt20" name = "email" placehoder="이메일을 입력해주세요">
+        <p class="idchk chk"></p><br>
+      
+        <p class="signup_text mt20" label for="password" >비밀번호</p>
+        <input type = "password" id ="password"  class= "mt20" name = "password" placehoder="비밀번호를 입력해주세요">
+        <div class="signup_bullbox">
+            <ul>
+                <li>영문 대문자 포함</li>
+                <li>영문 소문자 포함</li>
+                <li>숫자 포함</li>
+                <li>10자 이상</li>
+            </ul>
+        </div>
+        <p class="signup_text mt20" label for="password_chk" >비밀번호 확인</p>
+        <input type = "password" id ="password_chk" class= "mt20" placehoder="비밀번호를 다시 입력해주세요">
+        <p class="pwchk chk"></p><br>
+
+        <p class="signup_text mt20" label for="user_name" >이름<br></p>
+        <input type = "text" id ="user_name" name = "user_name" class= "mt20" placehoder="이름">
+        
+        <p class="signup_text mt20" label for="birth" >주민등록번호</br>
+        <input type = "text" class= "mt20 birth" name="birth" id="birth" placehoder="주민등록번호 앞자리" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="6"/>
+        -
+        <input type = "text" name = "gender" class = "mt20 gender" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="1"/> 
+        * * * * * *</p> </br>
+        
+        <p class="signup_text mt20" label for="phone_num" >핸드폰번호</br>
+            <input type = "text" id="phone_num" class= "mt20 phone phone1" name ="phone_num" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="3"/>
+            -
+            <input type = "text" class = "mt20 phone phone2" name = "phone_num" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="4"/>
+            -
+            <input type = "text" class = "mt20 phone phone3" name = "phone_num" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="4"/></br></p>
+        
+        <!--    <p class = "signup_capcha mt20">캡챠인증</p>
+        <button class="g-recaptcha" 
+            data-sitekey="reCAPTCHA_site_key" 
+            data-callback='onSubmit' 
+            data-action='submit'>Submit</button>
+        -->
+        
+        <input type="submit" class = "sign_upbtn submit mt20" value = "작성 완료" disabled>
+
+        </form>
+</div>
+<script>
+/*
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+*/
+</script>
+
+<script type = "text/javascript" src="/user/usersignup_form.js"></script>
+<script type = "text/javascript">
+
+//////id 체크//////
+
+
+let email = document.querySelector('#email');
+function id_check(){
+    let email2 = document.querySelector('#email').value;
+    let idchk=document.querySelector('.idchk');
+     
+    let data = {
+        email:this.value
+    }
+
+    fetch (`http://localhost:3001/user/signup/idCheck`,{
+        method: 'post',
+        headers: { "Content-Type":  "application/json" },
+        body:JSON.stringify(data)
+    }).
+    then( res => {
+        return res.json();
+    })
+    .then(json =>{
+        console.log(json);
+        if(json.check){
+            idchk.style.color="green";
+            idchk.innerHTML = '올바른 아이디 입니다.'
+        }else{
+            idchk.style.color="red";
+            idchk.innerHTML = "중복된 아이디 입니다."
+        }
+    })
+  
+    
+}
+
+email.addEventListener('focusout',id_check);
+
+
+
+
+</script>
+
+</body>
+</html> 

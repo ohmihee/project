@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="https://kit.fontawesome.com/1576d475b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<style>
+    video{
+        position: relative;
+        z-index: 900;
+        max-width: 100%;  display: block; margin: 20px auto;
+    }
+</style>
+</head>
+
+<body>
+
+    {% include "header.html" %}
+    
+    
+    <video muted autoplay src="/11.mp4" id="io"></video>
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <div id="chat_768">
+        <a href="/chat/chat" class="a_768"
+            onclick="window.open(this.href, '_blank', 'width=500, height=600'); return false;">
+            <span style="color:#ffffff">
+                <i class="far fa-comment-dots fa-3x"></i>
+            </span>
+            <p>실시간 상담</p>
+        </a>
+    </div>
+    <div id="chat">
+        <a href="/chat/chat" class="a_main"
+        onclick="window.open(this.href, '_blank', 'width=500, height=500'); return false;">
+    1:1 실시간 상담</a>
+    </div>
+
+    
+    <div id="contens">
+        <div id="main-slide-wrap">
+            <!-- 메인 슬라이드부분 -->
+            {% set res = banner %}
+            <div class="main-slide">
+                <div class="id on">
+                    <ul class="text">
+                        <p class="class">{{banner[0].type}}</p>
+                        <li class="local">
+                            <span></span> {{banner[0].title}}
+                        </li>
+                        <li class="title">
+                            <h4>
+                                {{banner[0].text}}
+                            </h4>
+                        </li>
+                        <li class="date">
+                            {{banner[0].date}}
+                        </li>
+                        <li>
+                            <button class="btn" onclick="location.href='http://localhost:3000/curriculum/curriculum'">자세히보기</button>
+                        </li>
+                    </ul>
+                    <div class="photo">
+                        <!-- -->
+                        <img class="img" src="http://localhost:3000/{{banner[0].image}}">
+                    </div>
+                </div>
+                <div class="id">
+                    <ul class="text">
+                        <p class="class">{{banner[1].type}}</p>
+                        <li class="local">
+                            <span></span>{{banner[1].title}}
+                        </li>
+                        <li class="title">
+                            <h4>
+                                {{banner[1].text}}
+                            </h4>
+                        </li>
+                        <li class="date">
+                            {{banner[1].date}}
+                        </li>
+                        <li>
+                            <button class="btn">자세히보기</button>
+                        </li>
+                    </ul>
+                    <div class="photo">
+                        <!-- -->
+                        <img class="img" src="http://localhost:3000/{{banner[1].image}}">
+                    </div>
+                </div>
+                <div class="id">
+                    <ul class="text">
+                        <p class="class">{{banner[2].type}}</p>
+                        <li class="local">
+                            <span></span>{{banner[2].title}}
+                        </li>
+                        <li class="title">
+                            <h4>
+                                {{banner[2].text}}
+                            </h4>
+                        </li>
+                        <li class="date">
+                            {{banner[2].date}}
+                        </li>
+                        <li>
+                            <button class="btn">자세히보기</button>
+                        </li>
+                    </ul>
+                    <div class="photo">
+                        <!-- -->
+                        <img class="img" src="http://localhost:3000/{{banner[2].image}}">
+                    </div>
+                </div>
+                <div class="id">
+                    <ul class="text">
+                        <p class="class">{{banner[3].type}}</p>
+                        <li class="local">
+                            <span></span> {{banner[3].title}}
+                        </li>
+                        <li class="title">
+                            <h4>
+                                {{banner[3].text}}
+                            </h4>
+                        </li>
+                        <li class="date">
+                            {{banner[3].date}}
+                        </li>
+                        <li>
+                            <button class="btn">자세히보기</button>
+                        </li>
+                    </ul>
+                    <div class="photo">
+                        <!-- -->
+                        <img class="img" src="http://localhost:3000/{{banner[3].image}}">
+                    </div>
+                </div>
+                <div class="id">
+                    <ul class="text">
+                        <p class="class">{{banner[4].type}}</p>
+                        <li class="local">
+                            <span></span>{{banner[4].title}}
+                        </li>
+                        <li class="title">
+                            <h4>
+                                {{banner[4].text}}
+                            </h4>
+                        </li>
+                        <li class="date">
+                            {{banner[4].date}}
+                        </li>
+                        <li>
+                            <button class="btn">자세히보기</button>
+                        </li>
+                    </ul>
+                    <div class="photo">
+                        <!-- -->
+                        <img class="img" src="http://localhost:3000/{{banner[4].image}}">
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-wrap">
+                <div class="bottom-margin">
+                    <div class="bottom">
+                        <!-- 이미지 자동이동부분 -->
+                        <ul class="bottom-form">
+                            <li class="bottom-img img1">
+                                <img src="/image/main/mainslide/mainslide_1.jpg">
+                            </li>
+                            <li class="bottom-img img2">
+                                <img src="/image/main/mainslide/mainslide_2.jpg">
+                            </li>
+                            <li class="bottom-img img3">
+                                <img src="/image/main/mainslide/mainslide_3.jpg">
+                            </li>
+                            <li class="bottom-img img4">
+                                <img src="/image/main/mainslide/mainslide_4.jpg">
+                            </li>
+                            <li class="bottom-img img5">
+                                <img src="/image/main/mainslide/mainslide_5.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="controls">
+                    <span class="prev">
+                        <img src="/image/main/mainslide/prev-btn_new.png">
+                    </span>
+                    <span class="next">
+                        <img src="/image/main/mainslide/next-btn_new.png">
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div id="main-bg">
+            <div class="sub-top sub">
+                <div class="sub-slide">
+                    <h3 onclick="location.href='http://localhost:3000/curriculum/curriculum'">블럭체인/게임기획/프로그래밍</h4>
+                        <ul class="sub-form">
+                            <li>
+                                <h6 onclick="location.href='http://localhost:3000/curriculum/curriculum'">게임</h6>
+                                <div class="background-right"></div>
+                                <div class="background-left"></div>
+                                <img class="sub-img" src="http://localhost:3000/{{bottomImg[4].image}}" onclick="location.href='http://localhost:3000/curriculum/curriculum'">
+                                <p>
+                                    <span>2020</span>
+                                    게임아카데미
+                                </p>
+                            </li>
+                            <li>
+                                <h6 onclick="location.href='http://localhost:3000/curriculum/curriculum'">게임</h6>
+                                <div class="background-right"></div>
+                                <div class="background-left"></div>
+                                <img class="sub-img" src="http://localhost:3000/{{bottomImg[0].image}}" onclick="location.href='http://localhost:3000/curriculum/curriculum'">
+                                <p>
+                                    <span>2020</span>
+                                    게임아카데미
+                                </p>
+                            </li>
+                            <li>
+                                <h6 onclick="location.href='http://localhost:3000/curriculum/curriculum'">게임</h6>
+                                <div class="background-right"></div>
+                                <div class="background-left"></div>
+                                <img class="sub-img" src="http://localhost:3000/{{bottomImg[1].image}}" onclick="location.href='http://localhost:3000/curriculum/curriculum'">
+                                <p>
+                                    <span>2020</span>
+                                    게임아카데미
+                                </p>
+                            </li>
+                            <li>
+                                <h6 onclick="location.href='http://localhost:3000/curriculum/curriculum'">게임</h6>
+                                <div class="background-right"></div>
+                                <div class="background-left"></div>
+                                <img class="sub-img" src="http://localhost:3000/{{bottomImg[2].image}}" onclick="location.href='http://localhost:3000/curriculum/curriculum'">
+                                <p>
+                                    <span>2020</span>
+                                    게임아카데미
+                                </p>
+                            </li>
+                            <li>
+                                <h6 onclick="location.href='http://localhost:3000/curriculum/curriculum'">게임</h6>
+                                <div class="background-right"></div>
+                                <div class="background-left"></div>
+                                <img class="sub-img" src="http://localhost:3000/{{bottomImg[3].image}}" onclick="location.href='http://localhost:3000/curriculum/curriculum'">
+                                <p>
+                                    <span>2020</span>
+                                    게임아카데미
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="sub-controls">
+                            <span class="subprev">
+                                <img src="/image/main/sub_slide/slick-arrow_prev.png">
+                            </span>
+                            <span class="subnext">
+                                <img src="/image/main/sub_slide/slick-arrow_next.png">
+                            </span>
+                        </p>
+                </div>
+                <div class="sub-bottom sub">
+                    <div class="sub-btm qr">
+                        <div class="btm_name_box">
+                            <div class="btm_name1 on">
+                                <h2>공지사항</h2>
+                            </div>
+                            <div class="btm_name2">
+                                <h2>개강일</h2>
+                            </div>
+                        </div>
+                        <img src="/image/main/bottom_img/sub_btm.png">
+                        <ul class="sub_mf3">
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[0].title}}
+                                <span>{{report[0].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[1].title}}
+                                <span>{{report[1].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[2].title}}
+                                <span>{{report[2].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[3].title}}
+                                <span>{{report[3].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[4].title}}
+                                <span>{{report[4].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[5].title}}
+                                <span>{{report[5].date}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/community/notice'" >{{report[6].title}}
+                                <span>{{report[6].date}}</span>
+                            </li>
+                        </ul>
+                        <ul class="sub_mf4">
+                            <li onclick="location.href='http://localhost:3000/scheduler'" >{{classOpen[0].title}}
+                                <span>{{classOpen[0].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[1].title}}
+                                <span>{{classOpen[1].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[2].title}}
+                                <span>{{classOpen[2].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[3].title}}
+                                <span>{{classOpen[3].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[4].title}}
+                                <span>{{classOpen[4].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[5].title}}
+                                <span>{{classOpen[5].contents}}</span>
+                            </li>
+                            <li onclick="location.href='http://localhost:3000/scheduler'">{{classOpen[6].title}}
+                                <span>{{classOpen[6].contents}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-btm2 qr">
+                        <div class="sub_name">
+                            <img src="/image/main/bottom_img/sub_btm2.png">
+                            <h1>
+                                알림판
+                            </h1>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="http://localhost:3000/{{bottomImg[0].image}}">
+                            </li>
+                            <li>
+                                <img src="http://localhost:3000/{{bottomImg[1].image}}">
+                            </li>
+                            <li>
+                                <img src="http://localhost:3000/{{bottomImg[2].image}}">
+                            </li>
+                            <li>
+                                <img src="http://localhost:3000/{{bottomImg[3].image}}">
+                            </li>
+                            <li>
+                                <img src="http://localhost:3000/{{bottomImg[4].image}}">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="sub-btm3 qr">
+                        <div class="sub_nmae">
+                            <img src="/image/main/bottom_img/sub_btm3.png">
+                            <h1>YouTube</h1>
+                        </div>
+                        <div class="sub_tube-form2" >
+                            <div class="sub_tube_form">
+                                <div class="sub_tube">
+                                    <a href="#">{{banner[1].title}}</a>
+                                    <span>
+                                        {{banner[1].date}}
+                                        <img src="http://localhost:3000/{{bottomImg[5].image}}">
+                                    </span>
+                                </div>
+                                <div class="sub_tube">
+                                    <a href="#">{{banner[2].text}}</a>
+                                    <span>
+                                        {{banner[2].date}}
+                                        <img src="http://localhost:3000/{{bottomImg[6].image}}">
+                                    </span>
+                                </div>
+                                <div class="sub_tube">
+                                    <a href="#">{{banner[3].text}}</a>
+                                    <span>
+                                        {{banner[3].date}}
+                                        <img src="http://localhost:3000/{{bottomImg[5].image}}">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-btm4 ">
+                        <ul>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon01.png"  onclick="location.href='http://localhost:3000/scheduler'">
+                                </span>
+                                <span class="img_name"  onclick="location.href='http://localhost:3000/scheduler'">개강날짜</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon02.png"  onclick="location.href='http://localhost:3000/college/interior'">
+                                </span>
+                                <span class="img_name" onclick="location.href='http://localhost:3000/college/interior'">공간안내</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon03.png" onclick="location.href='http://localhost:3000/college/location'">
+                                </span>
+                                <span class="img_name" onclick="location.href='http://localhost:3000/college/location'">교통주차</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon05.png" onclick="location.href='http://localhost:3000/job/portfolio'">
+                                </span>
+                                <span class="img_name" onclick="location.href='http://localhost:3000/job/portfolio'">포트폴리오</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon06.png" onclick="location.href='http://localhost:3000/consult/consulting'">
+                                </span>
+                                <span class="img_name" onclick="location.href='http://localhost:3000/consult/consulting'">1:1문의</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon07.png" onclick="location.href='http://localhost:3000/scheduler'">
+                                </span>
+                                <span class="img_name" onclick="location.href='http://localhost:3000/scheduler'">이벤트</span>
+                            </li>
+                            <li class="btm4 sa">
+                                <span class="btm4_img"><img src="/image/main/bottom_img/mf-rt-r_icon08.png">
+                                </span>
+                                <span class="img_name">마이페이지</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+    {% include "footer.html" %}
+    
+  
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": " GENERATE_SOURCEMAP=false next build",
+    "start": "next start",
+    "link-contracts": "cd lib && ln -s ../../build/contracts contracts"
+  },
+  "description": "This is the frontend client for our dapp. It is built with Next.js and uses a render-prop pattern (via `lib/Web3Container.js`) so we can easily inject blockchain functionality (i.e. web3, accounts, and the contract instance) into each page.",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
+    "@mui/styled-engine-sc": "^5.0.3",
+    "@types/react-redux": "^7.1.20",
+    "@types/react-slick": "^0.23.7",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.23.0",
+    "caver-js": "^1.6.4",
+    "caver-js-ext-kas": "^1.9.0",
+    "next": "^11.1.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-redux-wrapper": "^7.0.5",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0",
+    "react-daum-postcode": "^3.0.0",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-lock-scroll": "^0.1.8",
+    "react-native": "^0.66.1",
+    "react-redux": "^7.2.5",
+    "react-responsive": "^9.0.0-beta.4",
+    "react-slick": "^0.28.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-promise": "^0.6.0",
+    "redux-saga": "^1.1.3",
+    "slick-carousel": "^1.8.1",
+    "store": "^2.0.12",
+    "styled-components": "^5.3.3",
+    "truffle-hdwallet-provider-klaytn": "^1.4.1",
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1",
+    "@types/react": "^17.0.30",
+    "babel-plugin-styled-components": "^1.13.3",
+    "typescript": "^4.4.4"
+  }
+}

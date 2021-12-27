@@ -1,0 +1,46 @@
+{
+  "name": "coin_issue.js",
+  "version": "1.0.0",
+  "description": "암호화폐 자동매매 사이트\r - 암호화폐 거래소인 업비트 API를 사용하여 암호화폐를 자동으로 매수/매도 하는 웹사이트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.9",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-cli": "0.0.1",
+    "express-session": "^1.17.1",
+    "franc": "^5.0.0",
+    "fs": "0.0.1-security",
+    "json": "^11.0.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "node-notifier": "^9.0.1",
+    "nunjucks": "^3.2.3",
+    "open": "^8.0.9",
+    "puppeteer": "^9.1.1",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "session": "^0.1.0",
+    "socket.io": "^4.1.2",
+    "soket.io": "*",
+    "twit": "^2.2.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumpenop/webSiteForCryptoCurrency.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lumpenop/webSiteForCryptoCurrency/issues"
+  },
+  "homepage": "https://github.com/lumpenop/webSiteForCryptoCurrency#readme"
+}

@@ -96,4 +96,4 @@ console.log('in');
 }
 // const PORT = process.env.PORT || 3000;
 
-module.exports = server.listen(3000, chat());
+module.exports = server.listen(3002, chat());
